@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/guide/ajax-requests.html</loc>
+    <loc>http://v0-14.quasar-framework.org/guide/app-api-proxying-for-dev.html</loc>
     
     <lastmod>2018-02-20T19:46:58.840Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/guide/app-api-proxying-for-dev.html</loc>
+    <loc>http://v0-14.quasar-framework.org/guide/ajax-requests.html</loc>
     
     <lastmod>2018-02-20T19:46:58.840Z</lastmod>
     
@@ -422,7 +422,7 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/progress-bar.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/pull-to-refresh.html</loc>
     
     <lastmod>2018-02-20T19:46:58.827Z</lastmod>
     
@@ -436,7 +436,7 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/pull-to-refresh.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/progress-bar.html</loc>
     
     <lastmod>2018-02-20T19:46:58.827Z</lastmod>
     
@@ -527,14 +527,14 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/layout-side-links.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/layout.html</loc>
     
     <lastmod>2018-02-20T19:46:58.820Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/layout.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/layout-side-links.html</loc>
     
     <lastmod>2018-02-20T19:46:58.820Z</lastmod>
     
@@ -597,14 +597,14 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/handling-js-date.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/html-table.html</loc>
     
     <lastmod>2018-02-20T19:46:58.816Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/html-table.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/handling-js-date.html</loc>
     
     <lastmod>2018-02-20T19:46:58.816Z</lastmod>
     
@@ -709,14 +709,14 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/context-menu.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/cookies.html</loc>
     
     <lastmod>2018-02-20T19:46:58.805Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/cookies.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/context-menu.html</loc>
     
     <lastmod>2018-02-20T19:46:58.805Z</lastmod>
     
@@ -793,14 +793,14 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/breadcrumb.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/autocomplete.html</loc>
     
     <lastmod>2018-02-20T19:46:58.796Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/autocomplete.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/breadcrumb.html</loc>
     
     <lastmod>2018-02-20T19:46:58.796Z</lastmod>
     
@@ -877,14 +877,14 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/animation-css-helper-classes.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/index.html</loc>
     
     <lastmod>2017-10-08T08:50:10.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/index.html</loc>
+    <loc>http://v0-14.quasar-framework.org/blog/index.html</loc>
     
     <lastmod>2017-10-08T08:50:10.000Z</lastmod>
     
@@ -912,7 +912,7 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/blog/index.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/animation-css-helper-classes.html</loc>
     
     <lastmod>2017-10-08T08:50:10.000Z</lastmod>
     
@@ -926,7 +926,7 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/components/js-animations.html</loc>
+    <loc>http://v0-14.quasar-framework.org/index.html</loc>
     
     <lastmod>2017-10-08T08:50:10.000Z</lastmod>
     
@@ -940,7 +940,7 @@
   </url>
   
   <url>
-    <loc>http://v0-14.quasar-framework.org/index.html</loc>
+    <loc>http://v0-14.quasar-framework.org/components/js-animations.html</loc>
     
     <lastmod>2017-10-08T08:50:10.000Z</lastmod>
     
