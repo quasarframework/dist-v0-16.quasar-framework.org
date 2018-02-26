@@ -1,1 +1,490 @@
-<!DOCTYPE html><html lang="en"><title>Managing Google Analytics - Quasar Framework</title><meta charset="utf-8"><meta name="description" content="Quasar Framework - Build desktop & phone/tablet apps simultaneously"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><link rel="icon" href="/images/quasar-logo.png" type="image/x-icon"><link rel="stylesheet" href="/css/page-combined-bde7d41f1c.css"><body class=""><div id="header"><a class="menu-button"><i class="fa fa-bars"></i></a> <a id="logo" href="/" title="v0.15.3"><img src="/images/quasar-logo.png"> Quasar </a><a href="/guide/" class="menu-link current">Guide </a><a href="/components/" class="menu-link">Components </a><a href="/search/" class="menu-link" title="Search"><i class="fa fa-search" style="vertical-align:middle"></i> <span>Search</span> </a><a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github"><i class="fa fa-github" style="vertical-align:middle"></i> <span>Github</span> </a><a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter"><i class="fa fa-twitter" style="vertical-align:middle"></i> <span>Twitter</span> </a><a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat"><i class="fa fa-comments" style="vertical-align:middle"></i> <span>Discord Chat</span> </a><a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum"><i class="fa fa-group" style="vertical-align:middle"></i> <span>Forum</span></a></div><div class="sidebar-backdrop"></div><div id="sidebar" class="sidebar"><div class="list"><div class="sidebar-menu"><a href="/guide/" class="menu-link current">Guide </a><a href="/components/" class="menu-link">Components </a><a href="/search/" class="menu-link" title="Search"><i class="fa fa-search" style="vertical-align:middle"></i> <span>Search</span> </a><a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github"><i class="fa fa-github" style="vertical-align:middle"></i> <span>Github</span> </a><a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter"><i class="fa fa-twitter" style="vertical-align:middle"></i> <span>Twitter</span> </a><a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat"><i class="fa fa-comments" style="vertical-align:middle"></i> <span>Discord Chat</span> </a><a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum"><i class="fa fa-group" style="vertical-align:middle"></i> <span>Forum</span></a></div><div class="q-version">v0.15.3</div><div class="support-link"><a href="/support-quasar-framework.html"><i class="fa fa-ambulance"></i> Support Quasar</a></div><br><br><div>Proudly sponsored by: <a href="http://truelogic.com/" target="_blank"><img src="/images/truelogic_logo.png" height="130px" width="130px"></a><br><a href="http://campuscloudservices.com/" target="_blank"><img src="/images/campuscloud_logo.png" width="200px"></a></div><br><div class="q-older-version"><a href="http://v0-14.quasar-framework.org"><i class="fa fa-book"></i> Go to docs for older v0.14</a><br><a href="http://v0-13.quasar-framework.org"><i class="fa fa-book"></i> Go to docs for older v0.13</a></div><br><h2>Guide</h2><ul class="menu-root"><li><a href="/guide/introduction-to-quasar.html" class="sidebar-link">Introduction to Quasar</a><li><a href="/guide/quasar-playground.html" class="sidebar-link">Playground</a><li><a href="/guide/quasar-contribution-guide.html" class="sidebar-link">Contribution Guide</a><li><a href="/guide/quasar-release-notes.html" class="sidebar-link">Release Notes</a><li><a href="/guide/quasar-roadmap.html" class="sidebar-link">Roadmap</a><li><a href="/guide/quasar-upgrade-guide.html" class="sidebar-link">Upgrade Guide</a></ul><h3>Getting Started</h3><ul class="menu-root"><li><a href="/guide/index.html" class="sidebar-link">Installation</a><li><a href="/guide/quasar-cli.html" class="sidebar-link">Quasar CLI</a></ul><h3>UMD / Standalone</h3><ul class="menu-root"><li><a href="/guide/embedding-quasar.html" class="sidebar-link">Embedding Quasar</a></ul><h3>Starter Kit</h3><ul class="menu-root"><li><a href="/guide/app-installation.html" class="sidebar-link">Installation</a><li><a href="/guide/app-directory-structure.html" class="sidebar-link">Directory Structure</a><li><a href="/guide/app-quasar.conf.js.html" class="sidebar-link">quasar.conf.js</a><li><a href="/guide/app-build-commands.html" class="sidebar-link">Build Commands</a><li><a href="/guide/app-routing.html" class="sidebar-link">Routing</a><li><a href="/guide/app-adding-pages-and-layouts.html" class="sidebar-link">Adding Pages and Layouts</a><li><a href="/guide/app-lazy-loading---code-splitting.html" class="sidebar-link">Lazy Loading - Code Splitting</a><li><a href="/guide/app-handling-assets.html" class="sidebar-link">Handling Assets</a><li><a href="/guide/app-plugins.html" class="sidebar-link">App Plugins</a><li><a href="/guide/app-api-proxying.html" class="sidebar-link">API Proxying</a><li><a href="/guide/app-pre-processors-and-webpack.html" class="sidebar-link">Pre-Processors and Webpack</a><li><a href="/guide/app-vuex-store.html" class="sidebar-link">Vuex Store</a><li><a href="/guide/quasar-theming.html" class="sidebar-link">Theming</a><li><a href="/guide/app-linter.html" class="sidebar-link">App Linter</a><li><a href="/guide/app-rtl-support.html" class="sidebar-link">RTL Support</a><li><a href="/guide/app-supporting-ie.html" class="sidebar-link">Supporting IE</a></ul><h3>Developing PWA</h3><ul class="menu-root"><li><a href="/guide/pwa-introduction.html" class="sidebar-link">Introduction</a><li><a href="/guide/pwa-configuring-pwa.html" class="sidebar-link">Configuring PWA</a><li><a href="/guide/pwa-build-commands.html" class="sidebar-link">Build Commands</a></ul><h3>Developing Mobile Apps</h3><ul class="menu-root"><li><a href="/guide/cordova-introduction.html" class="sidebar-link">Introduction</a><li><a href="/guide/cordova-preparation.html" class="sidebar-link">Preparation</a><li><a href="/guide/cordova-configuring-cordova.html" class="sidebar-link">Configuring Cordova</a><li><a href="/guide/cordova-plugins.html" class="sidebar-link">Cordova Plugins</a><li><a href="/guide/cordova-build-commands.html" class="sidebar-link">Build Commands</a><li><a href="/guide/cordova-troubleshoot-and-tips.html" class="sidebar-link">Troubleshoot and Tips</a><li><a href="/guide/cordova-managing-google-analytics.html" class="sidebar-link current">Managing Google Analytics</a><li><a href="/guide/cordova-publishing-to-store.html" class="sidebar-link">Publishing to Store</a></ul><h3>Developing Electron Apps</h3><ul class="menu-root"><li><a href="/guide/electron-introduction.html" class="sidebar-link">Introduction</a><li><a href="/guide/electron-preparation.html" class="sidebar-link">Preparation</a><li><a href="/guide/electron-configuring-electron.html" class="sidebar-link">Configuring Electron</a><li><a href="/guide/electron-packages.html" class="sidebar-link">Electron Packages</a><li><a href="/guide/electron-build-commands.html" class="sidebar-link">Build Commands</a><li><a href="/guide/electron-static-assets.html" class="sidebar-link">Electron Static Assets</a><li><a href="/guide/electron-troubleshoot-and-tips.html" class="sidebar-link">Troubleshoot and Tips</a></ul><h3>Misc</h3><ul class="menu-root"><li><a href="/guide/ajax-requests.html" class="sidebar-link">Ajax Requests</a><li><a href="/guide/opening-dev-server-to-public.html" class="sidebar-link">Opening Dev Server To Public</a></ul></div></div><div id="main"><div class="content"><h1>Managing Google Analytics <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/cordova-managing-google-analytics.md" target="_blank">&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;</a></h1><p>Getting to know your users and measuring user behavior is an important step in App Development. Unfortunately, it takes a bit of non-standard work to get Google Analytics to work after wrapping your mobile app with Cordova. Setting up Google Analytics in a pure web application is quite easy, but Cordova somehow prevents pageviews and events from being sent to Google Analytics.<p>Follow this guide to implement Google Analytics into your Cordova powered Quasar App.<blockquote><p><strong>IMPORTANT</strong><br>You’ll need to include a <code>&lt;script&gt;</code> tag provided by Google in <code>/src/index.template.html</code>, which will make your App depend on an Internet connection!</blockquote><h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><ul><li>Make sure all your routes have a name and path parameter specified. Otherwise, they cannot be posted to the <code>ga.logPage</code> function. Please refer to <a href="/guide/routing.html">Routing</a> for more info on routing.<li>Have Basic knowledge of Google Analytics</ul><h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>Before we can start implementing Google Analytics into your application, you’ll need an account for <a href="https://analytics.google.com" target="_blank" rel="noopener">Google Analytics</a> and <a href="https://tagmanager.google.com/" target="_blank" rel="noopener">Google Tagmanager</a>. So let’s do that first. When you have these accounts, it’s time to configure Tag manager. Follow the steps in this <a href="http://www.multiminds.eu/2016/12/06/google-analytics-tag-manager-ionic-cordova/" target="_blank" rel="noopener">Multiminds article</a> to do so.<h2 id="Implementing-this-into-application"><a href="#Implementing-this-into-application" class="headerlink" title="Implementing this into application"></a>Implementing this into application</h2><blockquote><p>For this guide, we’ll assume you have a fixed sessionId that you send to Google Analytics. Google Analytics uses a sessionId to distinquish different users from each other. If you want to create an anonymous sessionId, see <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id" target="_blank" rel="noopener">Analytics Documentation on user id</a>.</blockquote><p>Place the Tag Manager snippet into head of your <code>index.html</code> file (if you’ve followed the <a href="http://www.multiminds.eu/2016/12/06/google-analytics-tag-manager-ionic-cordova/" target="_blank" rel="noopener">Multiminds article</a>, you already have this.) Create a new file in your codebase called <code>analytics.js</code> with the following contents:<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  logEvent(category, action, label, sessionId = <span class="literal">null</span>) &#123;</span><br><span class="line">    dataLayer.push(&#123;</span><br><span class="line">      <span class="string">'appEventCategory'</span>: category,</span><br><span class="line">      <span class="string">'appEventAction'</span>: action,</span><br><span class="line">      <span class="string">'appEventLabel'</span>: label,</span><br><span class="line">      <span class="string">'sessionId'</span>: sessionId</span><br><span class="line">    &#125;)</span><br><span class="line">    dataLayer.push(&#123; <span class="string">'event'</span>: <span class="string">'appEvent'</span> &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  logPage(path, name, sessionId = <span class="literal">null</span>) &#123;</span><br><span class="line">    dataLayer.push(&#123;</span><br><span class="line">      <span class="string">'screenPath'</span>: path,</span><br><span class="line">      <span class="string">'screenName'</span>: name,</span><br><span class="line">      <span class="string">'sessionId'</span>: sessionId</span><br><span class="line">    &#125;)</span><br><span class="line">    dataLayer.push(&#123; <span class="string">'event'</span>: <span class="string">'appScreenView'</span> &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></table></figure><p>To make sure all the pages in your application are automatically posted towards Google Analytics, we create an app plugin:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar new plugin google-analytics</span><br></pre></table></figure><p><p>Then we edit the newly created file: <code>/src/plugins/google-analytics</code>:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import ga from &apos;analytics.js&apos;</span><br><span class="line"></span><br><span class="line">export default (&#123; router &#125;) =&gt; &#123;</span><br><span class="line">  router.afterEach((to, from) =&gt; &#123;</span><br><span class="line">    ga.logPage(to.path, to.name, sessionId)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></table></figure><p><p>Finally we register the app plugin in <code>/quasar.conf.js</code>. We can do so only for Cordova wrapped apps if we want:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">plugins: [</span><br><span class="line">  ctx.mode.cordova ? &apos;google-analytics&apos; : &apos;&apos;</span><br><span class="line">]</span><br></pre></table></figure><p><blockquote><p>More information about events can be found in the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" target="_blank" rel="noopener">Analytics documentation on events</a>.</blockquote><p>You’ll see the events and pageviews coming in when you run your app. It usually takes around 5 to 10 seconds for a pageview to be registered in the realtime view.<div class="guide-links"><span><a href="/guide/cordova-troubleshoot-and-tips.html"><i class="fa fa-chevron-left"></i> Troubleshoot and Tips</a></span> <span style="float:right"><a href="/guide/cordova-publishing-to-store.html">Publishing to Store <i class="fa fa-chevron-right"></i></a></span></div><div class="footer"><hr><div>Last updated: Wed Feb 21 2018</div>Caught a mistake or want to contribute to the documentation? <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/cordova-managing-google-analytics.md" target="_blank">Suggest an edit on GitHub <i class="fa fa-pencil"></i></a></div></div><aside id="preview" style="display:none"><div id="preview-chooser"><a data-theme="android" class="active"><i class="fa fa-android"></i></a> <a data-theme="apple"><i class="fa fa-apple"></i></a></div><div id="android-preview" class="theme active"><iframe id="android-iframe" frameborder="0"></iframe><a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a> <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a></div><div id="apple-preview" class="theme"><iframe id="apple-iframe" frameborder="0"></iframe><a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a> <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a></div></aside></div><script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script><script>document.addEventListener("DOMContentLoaded",function(){FastClick.attach(document.body)},!1)</script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.1.1/js/smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script><script src="/js/page-combined-a064391219.js"></script><script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-6317975-4","auto"),ga("send","pageview")</script>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Managing Google Analytics - Quasar Framework</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Quasar Framework - Build desktop & phone/tablet apps simultaneously">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="icon" href="/images/quasar-logo.png" type="image/x-icon">
+        <!-- build:css css/page-combined.css -->
+          <link rel="stylesheet" href="/css/page.css">
+        <!-- endbuild -->
+    </head>
+    <body class="">
+        
+          <div id="header">
+  <a class="menu-button"><i class="fa fa-bars"></i></a>
+  <a id="logo" href="/" title="v0.15.3">
+    <img src="/images/quasar-logo.png">
+    Quasar
+  </a>
+  <a href="/guide/" class="menu-link current">
+  Guide
+</a>
+
+<a href="/components/" class="menu-link">
+  Components
+</a>
+
+<!--
+<a href="/blog/" class="menu-link">
+  Blog
+</a>
+-->
+
+<a href="/search/" class="menu-link" title="Search">
+  <i class="fa fa-search" style="vertical-align: middle"></i>
+  <span>Search</span>
+</a>
+
+<a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github">
+  <i class="fa fa-github" style="vertical-align: middle"></i>
+  <span>Github</span>
+</a>
+
+<a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter">
+  <i class="fa fa-twitter" style="vertical-align: middle"></i>
+  <span>Twitter</span>
+</a>
+
+<a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat">
+  <i class="fa fa-comments" style="vertical-align: middle"></i>
+  <span>Discord Chat</span>
+</a>
+
+<a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum">
+  <i class="fa fa-group" style="vertical-align: middle"></i>
+  <span>Forum</span>
+</a>
+
+</div>
+
+<div class="sidebar-backdrop"></div>
+
+<div id="sidebar" class="sidebar">
+  <div class="list">
+    <div class="sidebar-menu">
+      <a href="/guide/" class="menu-link current">
+  Guide
+</a>
+
+<a href="/components/" class="menu-link">
+  Components
+</a>
+
+<!--
+<a href="/blog/" class="menu-link">
+  Blog
+</a>
+-->
+
+<a href="/search/" class="menu-link" title="Search">
+  <i class="fa fa-search" style="vertical-align: middle"></i>
+  <span>Search</span>
+</a>
+
+<a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github">
+  <i class="fa fa-github" style="vertical-align: middle"></i>
+  <span>Github</span>
+</a>
+
+<a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter">
+  <i class="fa fa-twitter" style="vertical-align: middle"></i>
+  <span>Twitter</span>
+</a>
+
+<a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat">
+  <i class="fa fa-comments" style="vertical-align: middle"></i>
+  <span>Discord Chat</span>
+</a>
+
+<a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum">
+  <i class="fa fa-group" style="vertical-align: middle"></i>
+  <span>Forum</span>
+</a>
+
+    </div>
+
+    <div class="q-version">
+      v0.15.3
+    </div>
+    <div class="support-link">
+      <a href="/support-quasar-framework.html">
+        <i class="fa fa-ambulance"></i>
+        Support Quasar
+      </a>
+    </div>
+    <br><br>
+    <div>
+      Proudly sponsored by:
+      <a href="http://truelogic.com/" target="_blank">
+        <img src="/images/truelogic_logo.png" height="130px" width="130px" />
+      </a>
+      <br>
+      <a href="http://campuscloudservices.com/" target="_blank">
+        <img src="/images/campuscloud_logo.png" width="200px" />
+      </a>
+    </div>
+    <br>
+    <div class="q-older-version">
+      <a href="http://v0-14.quasar-framework.org">
+        <i class="fa fa-book"></i>
+        Go to docs for older v0.14
+      </a>
+      <br>
+      <a href="http://v0-13.quasar-framework.org">
+        <i class="fa fa-book"></i>
+        Go to docs for older v0.13
+      </a>
+    </div>
+    <br>
+
+    <h2>
+      
+      Guide
+    </h2>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/introduction-to-quasar.html" class="sidebar-link">Introduction to Quasar</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-playground.html" class="sidebar-link">Playground</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-contribution-guide.html" class="sidebar-link">Contribution Guide</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-release-notes.html" class="sidebar-link">Release Notes</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-roadmap.html" class="sidebar-link">Roadmap</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-upgrade-guide.html" class="sidebar-link">Upgrade Guide</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Getting Started</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/index.html" class="sidebar-link">Installation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-cli.html" class="sidebar-link">Quasar CLI</a>
+            </li>
+          
+        </ul>
+    
+          <h3>UMD / Standalone</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/embedding-quasar.html" class="sidebar-link">Embedding Quasar</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Starter Kit</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/app-installation.html" class="sidebar-link">Installation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-directory-structure.html" class="sidebar-link">Directory Structure</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-quasar.conf.js.html" class="sidebar-link">quasar.conf.js</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-routing.html" class="sidebar-link">Routing</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-adding-pages-and-layouts.html" class="sidebar-link">Adding Pages and Layouts</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-lazy-loading---code-splitting.html" class="sidebar-link">Lazy Loading - Code Splitting</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-handling-assets.html" class="sidebar-link">Handling Assets</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-plugins.html" class="sidebar-link">App Plugins</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-api-proxying.html" class="sidebar-link">API Proxying</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-pre-processors-and-webpack.html" class="sidebar-link">Pre-Processors and Webpack</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-vuex-store.html" class="sidebar-link">Vuex Store</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-theming.html" class="sidebar-link">Theming</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-linter.html" class="sidebar-link">App Linter</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-rtl-support.html" class="sidebar-link">RTL Support</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-supporting-ie.html" class="sidebar-link">Supporting IE</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Developing PWA</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/pwa-introduction.html" class="sidebar-link">Introduction</a>
+            </li>
+          
+            <li>
+              <a href="/guide/pwa-configuring-pwa.html" class="sidebar-link">Configuring PWA</a>
+            </li>
+          
+            <li>
+              <a href="/guide/pwa-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Developing Mobile Apps</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/cordova-introduction.html" class="sidebar-link">Introduction</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-preparation.html" class="sidebar-link">Preparation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-configuring-cordova.html" class="sidebar-link">Configuring Cordova</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-plugins.html" class="sidebar-link">Cordova Plugins</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-troubleshoot-and-tips.html" class="sidebar-link">Troubleshoot and Tips</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-managing-google-analytics.html" class="sidebar-link current">Managing Google Analytics</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-publishing-to-store.html" class="sidebar-link">Publishing to Store</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Developing Electron Apps</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/electron-introduction.html" class="sidebar-link">Introduction</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-preparation.html" class="sidebar-link">Preparation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-configuring-electron.html" class="sidebar-link">Configuring Electron</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-packages.html" class="sidebar-link">Electron Packages</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-static-assets.html" class="sidebar-link">Electron Static Assets</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-troubleshoot-and-tips.html" class="sidebar-link">Troubleshoot and Tips</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Misc</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/ajax-requests.html" class="sidebar-link">Ajax Requests</a>
+            </li>
+          
+            <li>
+              <a href="/guide/opening-dev-server-to-public.html" class="sidebar-link">Opening Dev Server To Public</a>
+            </li>
+          
+        </ul>
+    
+  </div>
+
+  
+</div>
+
+
+        
+        <div id="main">
+            
+                
+
+<div class="content">
+  <h1>
+    Managing Google Analytics
+    <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/cordova-managing-google-analytics.md" target="_blank">
+      &nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;
+    </a>
+  </h1>
+
+  <p>Getting to know your users and measuring user behavior is an important step in App Development. Unfortunately, it takes a bit of non-standard work to get Google Analytics to work after wrapping your mobile app with Cordova. Setting up Google Analytics in a pure web application is quite easy, but Cordova somehow prevents pageviews and events from being sent to Google Analytics.</p>
+<p>Follow this guide to implement Google Analytics into your Cordova powered Quasar App.</p>
+<blockquote>
+<p><strong>IMPORTANT</strong><br>You’ll need to include a <code>&lt;script&gt;</code> tag provided by Google in <code>/src/index.template.html</code>, which will make your App depend on an Internet connection!</p>
+</blockquote>
+<h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><ul>
+<li>Make sure all your routes have a name and path parameter specified. Otherwise, they cannot be posted to the <code>ga.logPage</code> function. Please refer to <a href="/guide/routing.html">Routing</a> for more info on routing.</li>
+<li>Have Basic knowledge of Google Analytics</li>
+</ul>
+<h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>Before we can start implementing Google Analytics into your application, you’ll need an account for <a href="https://analytics.google.com" target="_blank" rel="noopener">Google Analytics</a> and <a href="https://tagmanager.google.com/" target="_blank" rel="noopener">Google Tagmanager</a>. So let’s do that first. When you have these accounts, it’s time to configure Tag manager. Follow the steps in this <a href="http://www.multiminds.eu/2016/12/06/google-analytics-tag-manager-ionic-cordova/" target="_blank" rel="noopener">Multiminds article</a> to do so.</p>
+<h2 id="Implementing-this-into-application"><a href="#Implementing-this-into-application" class="headerlink" title="Implementing this into application"></a>Implementing this into application</h2><blockquote>
+<p>For this guide, we’ll assume you have a fixed sessionId that you send to Google Analytics. Google Analytics uses a sessionId to distinquish different users from each other. If you want to create an anonymous sessionId, see <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id" target="_blank" rel="noopener">Analytics Documentation on user id</a>.</p>
+</blockquote>
+<p>Place the Tag Manager snippet into head of your <code>index.html</code> file (if you’ve followed the <a href="http://www.multiminds.eu/2016/12/06/google-analytics-tag-manager-ionic-cordova/" target="_blank" rel="noopener">Multiminds article</a>, you already have this.) Create a new file in your codebase called <code>analytics.js</code> with the following contents:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  logEvent(category, action, label, sessionId = <span class="literal">null</span>) &#123;</span><br><span class="line">    dataLayer.push(&#123;</span><br><span class="line">      <span class="string">'appEventCategory'</span>: category,</span><br><span class="line">      <span class="string">'appEventAction'</span>: action,</span><br><span class="line">      <span class="string">'appEventLabel'</span>: label,</span><br><span class="line">      <span class="string">'sessionId'</span>: sessionId</span><br><span class="line">    &#125;)</span><br><span class="line">    dataLayer.push(&#123; <span class="string">'event'</span>: <span class="string">'appEvent'</span> &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  logPage(path, name, sessionId = <span class="literal">null</span>) &#123;</span><br><span class="line">    dataLayer.push(&#123;</span><br><span class="line">      <span class="string">'screenPath'</span>: path,</span><br><span class="line">      <span class="string">'screenName'</span>: name,</span><br><span class="line">      <span class="string">'sessionId'</span>: sessionId</span><br><span class="line">    &#125;)</span><br><span class="line">    dataLayer.push(&#123; <span class="string">'event'</span>: <span class="string">'appScreenView'</span> &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>To make sure all the pages in your application are automatically posted towards Google Analytics, we create an app plugin:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar new plugin google-analytics</span><br></pre></td></tr></table></figure></p>
+<p>Then we edit the newly created file: <code>/src/plugins/google-analytics</code>:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import ga from &apos;analytics.js&apos;</span><br><span class="line"></span><br><span class="line">export default (&#123; router &#125;) =&gt; &#123;</span><br><span class="line">  router.afterEach((to, from) =&gt; &#123;</span><br><span class="line">    ga.logPage(to.path, to.name, sessionId)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Finally we register the app plugin in <code>/quasar.conf.js</code>. We can do so only for Cordova wrapped apps if we want:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">plugins: [</span><br><span class="line">  ctx.mode.cordova ? &apos;google-analytics&apos; : &apos;&apos;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>More information about events can be found in the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" target="_blank" rel="noopener">Analytics documentation on events</a>.</p>
+</blockquote>
+<p>You’ll see the events and pageviews coming in when you run your app. It usually takes around 5 to 10 seconds for a pageview to be registered in the realtime view.</p>
+
+
+  
+
+  <div class="guide-links">
+    
+      <span><a href="/guide/cordova-troubleshoot-and-tips.html"><i class="fa fa-chevron-left"></i> Troubleshoot and Tips</a></span>
+    
+    
+      <span style="float:right"><a href="/guide/cordova-publishing-to-store.html">Publishing to Store <i class="fa fa-chevron-right"></i></a></span>
+    
+  </div>
+
+  <div class="footer">
+    <hr>
+    <div>
+      Last updated: Wed Feb 21 2018
+    </div>
+    Caught a mistake or want to contribute to the documentation?
+    <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/cordova-managing-google-analytics.md" target="_blank">
+      Suggest an edit on GitHub
+      <i class="fa fa-pencil"></i>
+    </a>
+  </div>
+</div>
+
+<aside id="preview" style="display: none;">
+  <div id="preview-chooser">
+    <a data-theme="android" class="active"><i class="fa fa-android"></i></a>
+    <a data-theme="apple"><i class="fa fa-apple"></i></a>
+  </div>
+  <div id="android-preview" class="theme active">
+    <iframe id="android-iframe" frameborder="0"></iframe>
+    <a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a>
+    <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a>
+  </div>
+  <div id="apple-preview" class="theme">
+    <iframe id="apple-iframe" frameborder="0"></iframe>
+    <a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a>
+    <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a>
+  </div>
+</aside>
+
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+        </script>
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.1.1/js/smooth-scroll.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+          <!-- build:js js/page-combined.js -->
+          <script src="/js/page.js"></script>
+          <script src="/js/preview.js"></script>
+          <script src="/js/search.js"></script>
+          <!-- endbuild -->
+          
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6317975-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    </body>
+</html>
