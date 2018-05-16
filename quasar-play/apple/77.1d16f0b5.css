@@ -1,0 +1,1 @@
+.flex-col-docs .doc-container{padding:15px}.flex-col-docs .column>div{padding:10px 15px;background:rgba(86,61,124,.15);border:1px solid rgba(86,61,124,.2)}.flex-col-docs .column+.column{margin-top:1rem}.flex-col-docs .nesting-example .column+.column{margin:0}.flex-col-docs .minheight-column .column{min-width:5rem}.flex-col-docs .with-bg .column{background:rgba(255,0,0,.1)}
