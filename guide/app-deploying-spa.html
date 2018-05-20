@@ -1,1 +1,516 @@
-<!DOCTYPE html><html lang="en"><title>Deployment of SPA - Quasar Framework</title><meta charset="utf-8"><meta name="description" content="Quasar Framework - Build responsive websites, PWAs, hybrid mobile Apps (through Cordova) and Desktop apps (through Electron), all simultaneously using same codebase"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><link rel="icon" href="/images/quasar-logo.png" type="image/x-icon"><link rel="stylesheet" href="/css/page-combined-f514a22a47.css"><body class=""><div id="header"><a class="menu-button"><i class="fa fa-bars"></i></a> <a id="logo" href="/" title="v0.16.0"><img src="/images/quasar-logo.png"> Quasar </a><a href="/guide/" class="menu-link current">Guide </a><a href="/components/" class="menu-link">Components </a><a href="/search/" class="menu-link" title="Search"><i class="fa fa-search" style="vertical-align:middle"></i> <span>Search</span> </a><a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github"><i class="fa fa-github" style="vertical-align:middle"></i> <span>Github</span> </a><a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter"><i class="fa fa-twitter" style="vertical-align:middle"></i> <span>Twitter</span> </a><a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat"><i class="fa fa-comments" style="vertical-align:middle"></i> <span>Discord Chat</span> </a><a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum"><i class="fa fa-group" style="vertical-align:middle"></i> <span>Forum</span></a></div><div class="sidebar-backdrop"></div><div id="sidebar" class="sidebar"><div class="list"><div class="sidebar-menu"><a href="/guide/" class="menu-link current">Guide </a><a href="/components/" class="menu-link">Components </a><a href="/search/" class="menu-link" title="Search"><i class="fa fa-search" style="vertical-align:middle"></i> <span>Search</span> </a><a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github"><i class="fa fa-github" style="vertical-align:middle"></i> <span>Github</span> </a><a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter"><i class="fa fa-twitter" style="vertical-align:middle"></i> <span>Twitter</span> </a><a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat"><i class="fa fa-comments" style="vertical-align:middle"></i> <span>Discord Chat</span> </a><a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum"><i class="fa fa-group" style="vertical-align:middle"></i> <span>Forum</span></a></div><div class="support-link"><a href="/support-quasar-framework.html"><i class="fa fa-ambulance"></i> Support Quasar</a></div><h3 class="q-version-select"><i class="fa fa-book"></i> Docs for<select id="version-select"><option value="">v0.16.0<option value="v0-15">v0.15<option value="v0-14">v0.14<option value="v0-13">v0.13</select></h3><div style="margin-bottom:7px">Proudly sponsored by:</div><div style="margin-bottom:7px"><a href="http://truelogic.com/" target="_blank"><img src="/images/logo_truelogic.png" height="110px" width="110px"> </a><a href="https://www.tayloredtechnology.net" target="_blank"><img src="/images/logo_tayloredtechnology_small.jpeg" height="110px" width="110px"></a></div><div style="margin-bottom:25px"><a href="http://campuscloudservices.com/" target="_blank"><img src="/images/logo_campuscloud.png" width="200px"></a></div><h2>Guide</h2><ul class="menu-root"><li><a href="/guide/introduction-to-quasar.html" class="sidebar-link">Introduction to Quasar</a><li><a href="/guide/quasar-playground.html" class="sidebar-link">Playground</a><li><a href="/guide/quasar-contribution-guide.html" class="sidebar-link">Contribution Guide</a><li><a href="/guide/quasar-release-notes.html" class="sidebar-link">Release Notes</a><li><a href="/guide/quasar-roadmap.html" class="sidebar-link">Roadmap</a><li><a href="/guide/quasar-upgrade-guide.html" class="sidebar-link">Upgrade Guide</a></ul><h3>Getting Started</h3><ul class="menu-root"><li><a href="/guide/index.html" class="sidebar-link">Installation</a><li><a href="/guide/quasar-cli.html" class="sidebar-link">Quasar CLI</a></ul><h3>UMD / Standalone</h3><ul class="menu-root"><li><a href="/guide/embedding-quasar.html" class="sidebar-link">Embedding Quasar</a></ul><h3>Starter Kit</h3><ul class="menu-root"><li><a href="/guide/app-installation.html" class="sidebar-link">Installation</a><li><a href="/guide/app-directory-structure.html" class="sidebar-link">Directory Structure</a><li><a href="/guide/app-quasar.conf.js.html" class="sidebar-link">quasar.conf.js</a><li><a href="/guide/app-build-commands.html" class="sidebar-link">Build Commands</a><li><a href="/guide/app-routing.html" class="sidebar-link">Routing</a><li><a href="/guide/app-adding-pages-and-layouts.html" class="sidebar-link">Adding Pages and Layouts</a><li><a href="/guide/app-lazy-loading---code-splitting.html" class="sidebar-link">Lazy Loading - Code Splitting</a><li><a href="/guide/app-handling-assets.html" class="sidebar-link">Handling Assets</a><li><a href="/guide/app-plugins.html" class="sidebar-link">App Plugins</a><li><a href="/guide/app-api-proxying.html" class="sidebar-link">API Proxying</a><li><a href="/guide/app-pre-processors-and-webpack.html" class="sidebar-link">Pre-Processors and Webpack</a><li><a href="/guide/app-vuex-store.html" class="sidebar-link">Vuex Store</a><li><a href="/guide/quasar-theming.html" class="sidebar-link">Theming</a><li><a href="/guide/app-linter.html" class="sidebar-link">App Linter</a><li><a href="/guide/app-supporting-ie.html" class="sidebar-link">Supporting IE</a><li><a href="/guide/app-deploying-spa.html" class="sidebar-link current">Deploying SPA</a></ul><h3>Developing PWA</h3><ul class="menu-root"><li><a href="/guide/pwa-introduction.html" class="sidebar-link">Introduction</a><li><a href="/guide/pwa-configuring-pwa.html" class="sidebar-link">Configuring PWA</a><li><a href="/guide/pwa-build-commands.html" class="sidebar-link">Build Commands</a></ul><h3>Developing Mobile Apps</h3><ul class="menu-root"><li><a href="/guide/cordova-introduction.html" class="sidebar-link">Introduction</a><li><a href="/guide/cordova-preparation.html" class="sidebar-link">Preparation</a><li><a href="/guide/cordova-configuring-cordova.html" class="sidebar-link">Configuring Cordova</a><li><a href="/guide/cordova-plugins.html" class="sidebar-link">Cordova Plugins</a><li><a href="/guide/cordova-build-commands.html" class="sidebar-link">Build Commands</a><li><a href="/guide/cordova-troubleshooting-and-tips.html" class="sidebar-link">Troubleshooting and Tips</a><li><a href="/guide/cordova-managing-google-analytics.html" class="sidebar-link">Managing Google Analytics</a><li><a href="/guide/cordova-publishing-to-store.html" class="sidebar-link">Publishing to Store</a></ul><h3>Developing Electron Apps</h3><ul class="menu-root"><li><a href="/guide/electron-introduction.html" class="sidebar-link">Introduction</a><li><a href="/guide/electron-preparation.html" class="sidebar-link">Preparation</a><li><a href="/guide/electron-configuring-electron.html" class="sidebar-link">Configuring Electron</a><li><a href="/guide/electron-packages.html" class="sidebar-link">Electron Packages</a><li><a href="/guide/electron-build-commands.html" class="sidebar-link">Build Commands</a><li><a href="/guide/electron-static-assets.html" class="sidebar-link">Electron Static Assets</a><li><a href="/guide/electron-troubleshooting-and-tips.html" class="sidebar-link">Troubleshooting and Tips</a></ul><h3>Misc</h3><ul class="menu-root"><li><a href="/guide/ajax-requests.html" class="sidebar-link">Ajax Requests</a><li><a href="/guide/opening-dev-server-to-public.html" class="sidebar-link">Opening Dev Server To Public</a></ul></div></div><div id="main"><div class="content"><h1>Deployment of SPA <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/app-deploying-spa.md" target="_blank">&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;</a></h1><p>There exist many services that allow deploying applications with ease.<br>To list all of them would not be possible so we will focus on the general deployment process and some specifics for common services.<p>If your favorite deployment tool is missing feel free to create a pull request on GitHub to add it to the list.<h2 id="General-deployment"><a href="#General-deployment" class="headerlink" title="General deployment"></a>General deployment</h2><p>The first step in deploying you Quasar SPA is always to build a production-ready bundle of your files, which gets rid of development statements and minifies your source.<p>To produce such a build use Quasar CLI with the following command<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar build</span><br></pre></table></figure><p><p>For possible build options please refer to the <a href="/guide/quasar-cli">Quasar CLI docs</a>.<p>This command will build your project in SPA mode and output your production ready bundle to a newly created folder <code>/dist/spa-&lt;theme&gt;</code> were <code>&lt;theme&gt;</code> is replaced by the theme you chose to build with.<p>To serve your production files it is <em>required</em> to use a web server, so to serve over http:// protocol. Simply opening the <code>index.html</code> file from within your browser will not work, since this uses the file:// protocol instead.<p>Common choices for web servers are <a href="https://www.nginx.com/" target="_blank" rel="noopener">nginx</a>, <a href="https://caddyserver.com/" target="_blank" rel="noopener">Caddy</a>, <a href="https://httpd.apache.org/" target="_blank" rel="noopener">Apache</a>, <a href="https://expressjs.com/" target="_blank" rel="noopener">Express</a>; but you should be able to use whatever web server you want.<p>The web server requires no special setup (unless you built with Vue Router in “history” mode). The main requirement is to be able to serve static files from a directory, so consult the documentation of your web server on how to set up static file serving.<p>An example config for nginx may look like this:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80 http2;</span><br><span class="line">    server_name quasar.myapp.com;</span><br><span class="line"></span><br><span class="line">    root /home/user/quasar.myapp.com/public;</span><br><span class="line"></span><br><span class="line">    add_header X-Frame-Options &quot;SAMEORIGIN&quot;;</span><br><span class="line">    add_header X-XSS-Protection &quot;1; mode=block&quot;;</span><br><span class="line">    add_header X-Content-Type-Options &quot;nosniff&quot;;</span><br><span class="line"></span><br><span class="line">    index index.html;</span><br><span class="line"></span><br><span class="line">    charset utf-8;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        try_files $uri $uri/ /index.html;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location = /favicon.ico &#123; access_log off; log_not_found off; &#125;</span><br><span class="line">    location = /robots.txt  &#123; access_log off; log_not_found off; &#125;</span><br><span class="line"></span><br><span class="line">    access_log off;</span><br><span class="line">    error_log  /var/log/nginx/quasar.myapp.com-error.log error;</span><br><span class="line"></span><br><span class="line">    location ~ /\.(?!well-known).* &#123;</span><br><span class="line">        deny all;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></table></figure><p><h2 id="Deploying-with-Now"><a href="#Deploying-with-Now" class="headerlink" title="Deploying with Now"></a>Deploying with Now</h2><p>Deploying your Quasar application with <a href="https://zeit.co/now" target="_blank" rel="noopener">now</a> is really easy. All you have to do is to download the <a href="https://zeit.co/download#now-cli" target="_blank" rel="noopener">now-cli</a> and log in by running:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ now login</span><br></pre></table></figure><p><p>Then proceed to build your Quasar application using the steps described in <a href="#General-deployment">General deployment</a>.<p>After the build is finished, change directory into your deploy root (example: <code>/dist/spa-mat</code>) and run:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ now</span><br></pre></table></figure><p><p>The Now CLI should now display information regarding your deployment, like the URL. That’s it. You’re done.<h2 id="Deploying-with-Heroku"><a href="#Deploying-with-Heroku" class="headerlink" title="Deploying with Heroku"></a>Deploying with Heroku</h2><p>Unfortunately, Heroku does not support static sites out of the box. But don’t worry, we just need to add an HTTP server to our project so Heroku can serve our Quasar application.<p>In this example, we will use <a href="https://expressjs.com/" target="_blank" rel="noopener">Express</a> to create a minimal server which Heroku can use.<p>First, we need to install the required dependencies to our project:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install express serve-static connect-history-api-fallback</span><br></pre></table></figure><p><p>Now that we have installed the required dependencies, we can add our server. Create a file called <code>server.js</code> in the root directory of your project.<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span></span><br><span class="line">  express = <span class="built_in">require</span>(<span class="string">'express'</span>),</span><br><span class="line">  serveStatic = <span class="built_in">require</span>(<span class="string">'serve-static'</span>),</span><br><span class="line">  history = <span class="built_in">require</span>(<span class="string">'connect-history-api-fallback'</span>),</span><br><span class="line">  port = process.env.PORT || <span class="number">5000</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line"></span><br><span class="line">app.use(history())</span><br><span class="line">app.use(serveStatic(__dirname + <span class="string">'/dist/spa-&lt;theme&gt;'</span>))</span><br><span class="line">app.listen(port)</span><br></pre></table></figure><p><p>Make sure to exchange <code>&lt;theme&gt;</code> to the theme you use.<p>Heroku assumes a set of npm scripts to be available, so we have to alter our <code>package.json</code> and add the following under the <code>script</code> section:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">"build"</span>: <span class="string">"quasar build"</span>,</span><br><span class="line"><span class="string">"start"</span>: <span class="string">"node server.js"</span>,</span><br><span class="line"><span class="string">"heroku-postbuild"</span>: <span class="string">"npm install --only=dev --no-shrinkwrap &amp;&amp; npm run build"</span></span><br></pre></table></figure><p><p>Now it is time to create an app on Heroku by running:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ heroku create</span><br></pre></table></figure><p><p>and deploy to Heroku using:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ heroku deploy</span><br></pre></table></figure><p><h2 id="Deploying-with-Surge"><a href="#Deploying-with-Surge" class="headerlink" title="Deploying with Surge"></a>Deploying with Surge</h2><p><a href="https://surge.sh/" target="_blank" rel="noopener">Surge</a> is a popular tool to host and deploy static sites.<p>If you want to deploy your application with Surge you first need to install the Surge CLI tool:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g surge</span><br></pre></table></figure><p><p>Next, we will use Quasar CLI to build our app:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar build</span><br></pre></table></figure><p><p>Now we can deploy our application using Surge by calling:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># make sure to replace &lt;theme&gt; with your actual theme</span></span><br><span class="line">$ surge dist/spa-&lt;theme&gt;</span><br></pre></table></figure><p><p>Now your application should be successfully deployed using Surge. You should be able to adapt this guide to any other static site deployment tool.<h2 id="Deploying-on-GitHub-Pages"><a href="#Deploying-on-GitHub-Pages" class="headerlink" title="Deploying on GitHub Pages"></a>Deploying on GitHub Pages</h2><p>To deploy your Quasar application to GitHub pages the first step is to create a special repository on GitHub which is named <code>&lt;username&gt;.github.io</code>. Clone this repository to your local machine.<p>Next, you need to build your Quasar application like it is described in <a href="#General-deployment">the general deployment section</a>. This will result in a <code>spa-&lt;theme&gt;</code> directory inside the <code>dist</code> directory. Copy the content of this folder to your cloned repository.<p>The last step is to add a commit in your repository an push to GitHub. After a short time, you should be able to visit your Quasar application at https://<username>.github.io/.</username><h3 id="Adding-a-custom-domain-to-GitHub-pages"><a href="#Adding-a-custom-domain-to-GitHub-pages" class="headerlink" title="Adding a custom domain to GitHub pages"></a>Adding a custom domain to GitHub pages</h3><p>Please see the <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target="_blank" rel="noopener">GitHub pages guides</a> for an in-depth explanation on how to set up a custom domain.<h3 id="Automated-deployment-to-GitHub-pages-with-push-dir"><a href="#Automated-deployment-to-GitHub-pages-with-push-dir" class="headerlink" title="Automated deployment to GitHub pages with push-dir"></a>Automated deployment to GitHub pages with push-dir</h3><p>Manual copying all your files to your GitHub Pages repository can be a cumbersome task to do. This step can be automated by using the <a href="https://github.com/L33T-KR3W/push-dir" target="_blank" rel="noopener">push-dir</a> package.<p>First, install the package with:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ npm install push-dir --save-dev</span><br></pre></table></figure><p><p>Then add a <code>deploy</code> script command to your <code>package.json</code>:<br><figure class="highlight"><table><tr><td class="code"><pre><span class="line">// replace &lt;theme&gt; with your actual theme (mat, ios)</span><br><span class="line">"scripts": &#123;</span><br><span class="line">  "deploy": "push-dir --dir=dist/spa-&lt;theme&gt; --remote=gh-pages --branch=master"</span><br><span class="line">&#125;</span><br></pre></table></figure><p><p>Add your GitHub Pages repository as a remote named <code>gh-pages</code>:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote add gh-pages git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git</span><br></pre></table></figure><p><p>Now you can build and deploy your application using:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar build</span><br><span class="line">$ npm run deploy</span><br></pre></table></figure><p><p>which will push the content of your build directory to your master branch on your Github Pages repository.<div class="guide-links"><span><a href="/guide/app-supporting-ie.html"><i class="fa fa-chevron-left"></i> Supporting IE</a></span> <span style="float:right"><a href="/guide/pwa-introduction.html">Introduction <i class="fa fa-chevron-right"></i></a></span></div><div class="footer"><hr><div>Last updated: Sun May 20 2018</div>Caught a mistake or want to contribute to the documentation? <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/app-deploying-spa.md" target="_blank">Suggest an edit on GitHub <i class="fa fa-pencil"></i></a></div></div><aside id="preview" style="display:none"><div id="preview-chooser"><a data-theme="android" class="active"><i class="fa fa-android"></i></a> <a data-theme="apple"><i class="fa fa-apple"></i></a></div><div id="android-preview" class="theme active"><iframe id="android-iframe" frameborder="0"></iframe><a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a> <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a></div><div id="apple-preview" class="theme"><iframe id="apple-iframe" frameborder="0"></iframe><a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a> <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a></div></aside></div><script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script><script>document.addEventListener("DOMContentLoaded",function(){FastClick.attach(document.body)},!1)</script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.1.1/js/smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script><script src="/js/page-combined-1aa467504d.js"></script><script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-6317975-4","auto"),ga("send","pageview")</script>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Deployment of SPA - Quasar Framework</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Quasar Framework - Build responsive websites, PWAs, hybrid mobile Apps (through Cordova) and Desktop apps (through Electron), all simultaneously using same codebase">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="icon" href="/images/quasar-logo.png" type="image/x-icon">
+        <!-- build:css css/page-combined.css -->
+          <link rel="stylesheet" href="/css/page.css">
+        <!-- endbuild -->
+    </head>
+    <body class="">
+        
+          <div id="header">
+  <a class="menu-button"><i class="fa fa-bars"></i></a>
+  <a id="logo" href="/" title="v0.16.0">
+    <img src="/images/quasar-logo.png">
+    Quasar
+  </a>
+  <a href="/guide/" class="menu-link current">
+  Guide
+</a>
+
+<a href="/components/" class="menu-link">
+  Components
+</a>
+
+<!--
+<a href="/blog/" class="menu-link">
+  Blog
+</a>
+-->
+
+<a href="/search/" class="menu-link" title="Search">
+  <i class="fa fa-search" style="vertical-align: middle"></i>
+  <span>Search</span>
+</a>
+
+<a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github">
+  <i class="fa fa-github" style="vertical-align: middle"></i>
+  <span>Github</span>
+</a>
+
+<a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter">
+  <i class="fa fa-twitter" style="vertical-align: middle"></i>
+  <span>Twitter</span>
+</a>
+
+<a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat">
+  <i class="fa fa-comments" style="vertical-align: middle"></i>
+  <span>Discord Chat</span>
+</a>
+
+<a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum">
+  <i class="fa fa-group" style="vertical-align: middle"></i>
+  <span>Forum</span>
+</a>
+
+</div>
+
+<div class="sidebar-backdrop"></div>
+
+<div id="sidebar" class="sidebar">
+  <div class="list">
+    <div class="sidebar-menu">
+      <a href="/guide/" class="menu-link current">
+  Guide
+</a>
+
+<a href="/components/" class="menu-link">
+  Components
+</a>
+
+<!--
+<a href="/blog/" class="menu-link">
+  Blog
+</a>
+-->
+
+<a href="/search/" class="menu-link" title="Search">
+  <i class="fa fa-search" style="vertical-align: middle"></i>
+  <span>Search</span>
+</a>
+
+<a href="https://github.com/quasarframework/quasar" class="menu-link" target="_blank" title="Github">
+  <i class="fa fa-github" style="vertical-align: middle"></i>
+  <span>Github</span>
+</a>
+
+<a href="https://twitter.com/quasarframework" class="menu-link" target="_blank" title="Twitter">
+  <i class="fa fa-twitter" style="vertical-align: middle"></i>
+  <span>Twitter</span>
+</a>
+
+<a href="https://discord.gg/5TDhbDg" class="menu-link" target="_blank" title="Discord Chat">
+  <i class="fa fa-comments" style="vertical-align: middle"></i>
+  <span>Discord Chat</span>
+</a>
+
+<a href="http://forum.quasar-framework.org" class="menu-link" target="_blank" title="Forum">
+  <i class="fa fa-group" style="vertical-align: middle"></i>
+  <span>Forum</span>
+</a>
+
+    </div>
+
+    <div class="support-link">
+      <a href="/support-quasar-framework.html">
+        <i class="fa fa-ambulance"></i>
+        Support Quasar
+      </a>
+    </div>
+
+    <!--
+    <br><br>
+    <a
+      href="https://quasar-framework.org"
+      target="_blank"
+      class="sidebar-link current"
+    >
+      <i class="fa fa-hand-peace-o"></i>
+      Please upgrade to latest Quasar
+    </a>
+    <br><br>
+    -->
+
+    <h3 class="q-version-select">
+      <i class="fa fa-book"></i> Docs for
+      <select id="version-select">
+        <option value="">v0.16.0</option>
+        <option value="v0-15">v0.15</option>
+        <option value="v0-14">v0.14</option>
+        <option value="v0-13">v0.13</option>
+      </select>
+    </h3>
+
+    <div style="margin-bottom: 7px">Proudly sponsored by:</div>
+    <div style="margin-bottom: 7px">
+      <a href="http://truelogic.com/" target="_blank">
+        <img src="/images/logo_truelogic.png" height="110px" width="110px" />
+      </a>
+      <a href="https://www.tayloredtechnology.net" target="_blank">
+        <img src="/images/logo_tayloredtechnology_small.jpeg" height="110px" width="110px" />
+      </a>
+    </div>
+    <div style="margin-bottom: 25px">
+      <a href="http://campuscloudservices.com/" target="_blank">
+        <img src="/images/logo_campuscloud.png" width="200px" />
+      </a>
+    </div>
+
+    <h2>
+      
+      Guide
+    </h2>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/introduction-to-quasar.html" class="sidebar-link">Introduction to Quasar</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-playground.html" class="sidebar-link">Playground</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-contribution-guide.html" class="sidebar-link">Contribution Guide</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-release-notes.html" class="sidebar-link">Release Notes</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-roadmap.html" class="sidebar-link">Roadmap</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-upgrade-guide.html" class="sidebar-link">Upgrade Guide</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Getting Started</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/index.html" class="sidebar-link">Installation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-cli.html" class="sidebar-link">Quasar CLI</a>
+            </li>
+          
+        </ul>
+    
+          <h3>UMD / Standalone</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/embedding-quasar.html" class="sidebar-link">Embedding Quasar</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Starter Kit</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/app-installation.html" class="sidebar-link">Installation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-directory-structure.html" class="sidebar-link">Directory Structure</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-quasar.conf.js.html" class="sidebar-link">quasar.conf.js</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-routing.html" class="sidebar-link">Routing</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-adding-pages-and-layouts.html" class="sidebar-link">Adding Pages and Layouts</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-lazy-loading---code-splitting.html" class="sidebar-link">Lazy Loading - Code Splitting</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-handling-assets.html" class="sidebar-link">Handling Assets</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-plugins.html" class="sidebar-link">App Plugins</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-api-proxying.html" class="sidebar-link">API Proxying</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-pre-processors-and-webpack.html" class="sidebar-link">Pre-Processors and Webpack</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-vuex-store.html" class="sidebar-link">Vuex Store</a>
+            </li>
+          
+            <li>
+              <a href="/guide/quasar-theming.html" class="sidebar-link">Theming</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-linter.html" class="sidebar-link">App Linter</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-supporting-ie.html" class="sidebar-link">Supporting IE</a>
+            </li>
+          
+            <li>
+              <a href="/guide/app-deploying-spa.html" class="sidebar-link current">Deploying SPA</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Developing PWA</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/pwa-introduction.html" class="sidebar-link">Introduction</a>
+            </li>
+          
+            <li>
+              <a href="/guide/pwa-configuring-pwa.html" class="sidebar-link">Configuring PWA</a>
+            </li>
+          
+            <li>
+              <a href="/guide/pwa-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Developing Mobile Apps</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/cordova-introduction.html" class="sidebar-link">Introduction</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-preparation.html" class="sidebar-link">Preparation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-configuring-cordova.html" class="sidebar-link">Configuring Cordova</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-plugins.html" class="sidebar-link">Cordova Plugins</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-troubleshooting-and-tips.html" class="sidebar-link">Troubleshooting and Tips</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-managing-google-analytics.html" class="sidebar-link">Managing Google Analytics</a>
+            </li>
+          
+            <li>
+              <a href="/guide/cordova-publishing-to-store.html" class="sidebar-link">Publishing to Store</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Developing Electron Apps</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/electron-introduction.html" class="sidebar-link">Introduction</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-preparation.html" class="sidebar-link">Preparation</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-configuring-electron.html" class="sidebar-link">Configuring Electron</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-packages.html" class="sidebar-link">Electron Packages</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-build-commands.html" class="sidebar-link">Build Commands</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-static-assets.html" class="sidebar-link">Electron Static Assets</a>
+            </li>
+          
+            <li>
+              <a href="/guide/electron-troubleshooting-and-tips.html" class="sidebar-link">Troubleshooting and Tips</a>
+            </li>
+          
+        </ul>
+    
+          <h3>Misc</h3>
+    
+        <ul class="menu-root">
+          
+            <li>
+              <a href="/guide/ajax-requests.html" class="sidebar-link">Ajax Requests</a>
+            </li>
+          
+            <li>
+              <a href="/guide/opening-dev-server-to-public.html" class="sidebar-link">Opening Dev Server To Public</a>
+            </li>
+          
+        </ul>
+    
+  </div>
+
+  
+</div>
+
+
+        
+        <div id="main">
+            
+                
+
+<div class="content">
+  <h1>
+    Deployment of SPA
+    <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/app-deploying-spa.md" target="_blank">
+      &nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;
+    </a>
+  </h1>
+
+  <p>There exist many services that allow deploying applications with ease.<br>To list all of them would not be possible so we will focus on the general deployment process and some specifics for common services.</p>
+<p>If your favorite deployment tool is missing feel free to create a pull request on GitHub to add it to the list.</p>
+<h2 id="General-deployment"><a href="#General-deployment" class="headerlink" title="General deployment"></a>General deployment</h2><p>The first step in deploying you Quasar SPA is always to build a production-ready bundle of your files, which gets rid of development statements and minifies your source.</p>
+<p>To produce such a build use Quasar CLI with the following command<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar build</span><br></pre></td></tr></table></figure></p>
+<p>For possible build options please refer to the <a href="/guide/quasar-cli">Quasar CLI docs</a>.</p>
+<p>This command will build your project in SPA mode and output your production ready bundle to a newly created folder <code>/dist/spa-&lt;theme&gt;</code> were <code>&lt;theme&gt;</code> is replaced by the theme you chose to build with.</p>
+<p>To serve your production files it is <em>required</em> to use a web server, so to serve over http:// protocol. Simply opening the <code>index.html</code> file from within your browser will not work, since this uses the file:// protocol instead.</p>
+<p>Common choices for web servers are <a href="https://www.nginx.com/" target="_blank" rel="noopener">nginx</a>, <a href="https://caddyserver.com/" target="_blank" rel="noopener">Caddy</a>, <a href="https://httpd.apache.org/" target="_blank" rel="noopener">Apache</a>, <a href="https://expressjs.com/" target="_blank" rel="noopener">Express</a>; but you should be able to use whatever web server you want.</p>
+<p>The web server requires no special setup (unless you built with Vue Router in “history” mode). The main requirement is to be able to serve static files from a directory, so consult the documentation of your web server on how to set up static file serving.</p>
+<p>An example config for nginx may look like this:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80 http2;</span><br><span class="line">    server_name quasar.myapp.com;</span><br><span class="line"></span><br><span class="line">    root /home/user/quasar.myapp.com/public;</span><br><span class="line"></span><br><span class="line">    add_header X-Frame-Options &quot;SAMEORIGIN&quot;;</span><br><span class="line">    add_header X-XSS-Protection &quot;1; mode=block&quot;;</span><br><span class="line">    add_header X-Content-Type-Options &quot;nosniff&quot;;</span><br><span class="line"></span><br><span class="line">    index index.html;</span><br><span class="line"></span><br><span class="line">    charset utf-8;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        try_files $uri $uri/ /index.html;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location = /favicon.ico &#123; access_log off; log_not_found off; &#125;</span><br><span class="line">    location = /robots.txt  &#123; access_log off; log_not_found off; &#125;</span><br><span class="line"></span><br><span class="line">    access_log off;</span><br><span class="line">    error_log  /var/log/nginx/quasar.myapp.com-error.log error;</span><br><span class="line"></span><br><span class="line">    location ~ /\.(?!well-known).* &#123;</span><br><span class="line">        deny all;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Deploying-with-Now"><a href="#Deploying-with-Now" class="headerlink" title="Deploying with Now"></a>Deploying with Now</h2><p>Deploying your Quasar application with <a href="https://zeit.co/now" target="_blank" rel="noopener">now</a> is really easy. All you have to do is to download the <a href="https://zeit.co/download#now-cli" target="_blank" rel="noopener">now-cli</a> and log in by running:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ now login</span><br></pre></td></tr></table></figure></p>
+<p>Then proceed to build your Quasar application using the steps described in <a href="#General-deployment">General deployment</a>.</p>
+<p>After the build is finished, change directory into your deploy root (example: <code>/dist/spa-mat</code>) and run:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ now</span><br></pre></td></tr></table></figure></p>
+<p>The Now CLI should now display information regarding your deployment, like the URL. That’s it. You’re done.</p>
+<h2 id="Deploying-with-Heroku"><a href="#Deploying-with-Heroku" class="headerlink" title="Deploying with Heroku"></a>Deploying with Heroku</h2><p>Unfortunately, Heroku does not support static sites out of the box. But don’t worry, we just need to add an HTTP server to our project so Heroku can serve our Quasar application.</p>
+<p>In this example, we will use <a href="https://expressjs.com/" target="_blank" rel="noopener">Express</a> to create a minimal server which Heroku can use.</p>
+<p>First, we need to install the required dependencies to our project:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install express serve-static connect-history-api-fallback</span><br></pre></td></tr></table></figure></p>
+<p>Now that we have installed the required dependencies, we can add our server. Create a file called <code>server.js</code> in the root directory of your project.<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span></span><br><span class="line">  express = <span class="built_in">require</span>(<span class="string">'express'</span>),</span><br><span class="line">  serveStatic = <span class="built_in">require</span>(<span class="string">'serve-static'</span>),</span><br><span class="line">  history = <span class="built_in">require</span>(<span class="string">'connect-history-api-fallback'</span>),</span><br><span class="line">  port = process.env.PORT || <span class="number">5000</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line"></span><br><span class="line">app.use(history())</span><br><span class="line">app.use(serveStatic(__dirname + <span class="string">'/dist/spa-&lt;theme&gt;'</span>))</span><br><span class="line">app.listen(port)</span><br></pre></td></tr></table></figure></p>
+<p>Make sure to exchange <code>&lt;theme&gt;</code> to the theme you use.</p>
+<p>Heroku assumes a set of npm scripts to be available, so we have to alter our <code>package.json</code> and add the following under the <code>script</code> section:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">"build"</span>: <span class="string">"quasar build"</span>,</span><br><span class="line"><span class="string">"start"</span>: <span class="string">"node server.js"</span>,</span><br><span class="line"><span class="string">"heroku-postbuild"</span>: <span class="string">"npm install --only=dev --no-shrinkwrap &amp;&amp; npm run build"</span></span><br></pre></td></tr></table></figure></p>
+<p>Now it is time to create an app on Heroku by running:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ heroku create</span><br></pre></td></tr></table></figure></p>
+<p>and deploy to Heroku using:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ heroku deploy</span><br></pre></td></tr></table></figure></p>
+<h2 id="Deploying-with-Surge"><a href="#Deploying-with-Surge" class="headerlink" title="Deploying with Surge"></a>Deploying with Surge</h2><p><a href="https://surge.sh/" target="_blank" rel="noopener">Surge</a> is a popular tool to host and deploy static sites.</p>
+<p>If you want to deploy your application with Surge you first need to install the Surge CLI tool:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g surge</span><br></pre></td></tr></table></figure></p>
+<p>Next, we will use Quasar CLI to build our app:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar build</span><br></pre></td></tr></table></figure></p>
+<p>Now we can deploy our application using Surge by calling:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># make sure to replace &lt;theme&gt; with your actual theme</span></span><br><span class="line">$ surge dist/spa-&lt;theme&gt;</span><br></pre></td></tr></table></figure></p>
+<p>Now your application should be successfully deployed using Surge. You should be able to adapt this guide to any other static site deployment tool.</p>
+<h2 id="Deploying-on-GitHub-Pages"><a href="#Deploying-on-GitHub-Pages" class="headerlink" title="Deploying on GitHub Pages"></a>Deploying on GitHub Pages</h2><p>To deploy your Quasar application to GitHub pages the first step is to create a special repository on GitHub which is named <code>&lt;username&gt;.github.io</code>. Clone this repository to your local machine.</p>
+<p>Next, you need to build your Quasar application like it is described in <a href="#General-deployment">the general deployment section</a>. This will result in a <code>spa-&lt;theme&gt;</code> directory inside the <code>dist</code> directory. Copy the content of this folder to your cloned repository.</p>
+<p>The last step is to add a commit in your repository an push to GitHub. After a short time, you should be able to visit your Quasar application at https://<username>.github.io/.</username></p>
+<h3 id="Adding-a-custom-domain-to-GitHub-pages"><a href="#Adding-a-custom-domain-to-GitHub-pages" class="headerlink" title="Adding a custom domain to GitHub pages"></a>Adding a custom domain to GitHub pages</h3><p>Please see the <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target="_blank" rel="noopener">GitHub pages guides</a> for an in-depth explanation on how to set up a custom domain.</p>
+<h3 id="Automated-deployment-to-GitHub-pages-with-push-dir"><a href="#Automated-deployment-to-GitHub-pages-with-push-dir" class="headerlink" title="Automated deployment to GitHub pages with push-dir"></a>Automated deployment to GitHub pages with push-dir</h3><p>Manual copying all your files to your GitHub Pages repository can be a cumbersome task to do. This step can be automated by using the <a href="https://github.com/L33T-KR3W/push-dir" target="_blank" rel="noopener">push-dir</a> package.</p>
+<p>First, install the package with:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$ npm install push-dir --save-dev</span><br></pre></td></tr></table></figure></p>
+<p>Then add a <code>deploy</code> script command to your <code>package.json</code>:<br><figure class="highlight"><table><tr><td class="code"><pre><span class="line">// replace &lt;theme&gt; with your actual theme (mat, ios)</span><br><span class="line">"scripts": &#123;</span><br><span class="line">  "deploy": "push-dir --dir=dist/spa-&lt;theme&gt; --remote=gh-pages --branch=master"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Add your GitHub Pages repository as a remote named <code>gh-pages</code>:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote add gh-pages git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git</span><br></pre></td></tr></table></figure></p>
+<p>Now you can build and deploy your application using:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar build</span><br><span class="line">$ npm run deploy</span><br></pre></td></tr></table></figure></p>
+<p>which will push the content of your build directory to your master branch on your Github Pages repository.</p>
+
+
+  
+
+  <div class="guide-links">
+    
+      <span><a href="/guide/app-supporting-ie.html"><i class="fa fa-chevron-left"></i> Supporting IE</a></span>
+    
+    
+      <span style="float:right"><a href="/guide/pwa-introduction.html">Introduction <i class="fa fa-chevron-right"></i></a></span>
+    
+  </div>
+
+  <div class="footer">
+    <hr>
+    <div>
+      Last updated: Sun May 20 2018
+    </div>
+    Caught a mistake or want to contribute to the documentation?
+    <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/app-deploying-spa.md" target="_blank">
+      Suggest an edit on GitHub
+      <i class="fa fa-pencil"></i>
+    </a>
+  </div>
+</div>
+
+<aside id="preview" style="display: none;">
+  <div id="preview-chooser">
+    <a data-theme="android" class="active"><i class="fa fa-android"></i></a>
+    <a data-theme="apple"><i class="fa fa-apple"></i></a>
+  </div>
+  <div id="android-preview" class="theme active">
+    <iframe id="android-iframe" frameborder="0"></iframe>
+    <a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a>
+    <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a>
+  </div>
+  <div id="apple-preview" class="theme">
+    <iframe id="apple-iframe" frameborder="0"></iframe>
+    <a class="desktop-launcher" target="_blank"><i class="fa fa-desktop"></i><br>Desktop View</a>
+    <a class="view-source" target="_blank"><i class="fa fa-file-code-o"></i><br>View Source</a>
+  </div>
+</aside>
+
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+        </script>
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.1.1/js/smooth-scroll.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+          <!-- build:js js/page-combined.js -->
+          <script src="/js/page.js"></script>
+          <script src="/js/preview.js"></script>
+          <script src="/js/search.js"></script>
+          <!-- endbuild -->
+          
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6317975-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    </body>
+</html>
