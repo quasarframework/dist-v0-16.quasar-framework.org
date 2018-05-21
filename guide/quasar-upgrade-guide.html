@@ -410,7 +410,7 @@
 </blockquote>
 <h3 id="UMD"><a href="#UMD" class="headerlink" title="UMD"></a>UMD</h3><p>Simply replace the version string in all the CSS and JS tags that refer to Quasar to the newer version.</p>
 <h3 id="Starter-Kit"><a href="#Starter-Kit" class="headerlink" title="Starter Kit"></a>Starter Kit</h3><p>As you may have noticed, the only dependency in your project (unless you’ve also installed a linter or your own deps) is <code>quasar-cli</code>. All you need is to update this dependency.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ yarn add --dev quasar-cli@latest</span><br><span class="line"><span class="comment"># or:</span></span><br><span class="line">$ npm install quasar-cli@latest</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ yarn add --dev quasar-cli@latest</span><br><span class="line"><span class="comment"># or:</span></span><br><span class="line">$ npm install --save-dev quasar-cli@latest</span><br></pre></td></tr></table></figure>
 <p>Quasar CLI is installed both globally and locally. When you issue a Quasar command, the global installation defers to the project locally installed Quasar CLI. This allows you to skip writing npm scripts in your package.json (for Quasar commands), and also it allows you to run different Quasar versions in multiple projects.</p>
 <p>Watch for Quasar CLI version. It’s not the same thing as Quasar version. Type <code>$ quasar info</code>. All you need to know is that the major and minor part of Quasar CLI version matches Quasar version. So for example installing latest Quasar CLI v0.15.x will ensure you are using latest Quasar v0.15.x. While working on v0.15.x, no breaking changes will occur, so you are safe (&amp; recommended) to upgrade to latest Quasar CLI as it’s released.</p>
 <blockquote>
@@ -418,6 +418,13 @@
 </blockquote>
 <h2 id="Upgrading-v0-15-to-v0-16"><a href="#Upgrading-v0-15-to-v0-16" class="headerlink" title="Upgrading v0.15 to v0.16"></a>Upgrading v0.15 to v0.16</h2><p>The difference between Quasar v0.15.x and v0.16 is minimal. No big breaking changes as you can see below. The only reason for bumping Quasar’s version is to maintain consistency (same major + minor version) with Quasar CLI (which got an important update: webpack 4, babel 7, Workbox, electron-builder support, ionicons v4 and many more).</p>
 <p>Upgrading from v0.15.x should be seamless if you are using Quasar CLI – which will guide you to do some minor changes to your project folder. Note that Ionicons v4 has breaking changes, so if you are using it in your project, then you need to update each such icon to its new name.</p>
+<p>If you face any problems, there is probably something conflicting in your npm modules. It is either babel, webpack or eslint. The console messages will tell you more about what is wrong.</p>
+<blockquote>
+<p><strong>Remember you’ll be using Webpack 4, so all your webpack plugins must be compatible with it</strong>. For example, you need to upgrade to a newer <code>eslint-loader</code> package if you already have it in your package.json as dev dependency.</p>
+</blockquote>
+<p>If you’re using ESLint, make sure you have these in your package.json:<br><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"eslint-loader": "^2.0.0",</span><br><span class="line">"eslint": "^4.19.1",</span><br></pre></td></tr></table></figure></p>
+<p>If you are seeing babel issues when you run <code>quasar dev</code>, then you have probably installed a package that is using babel-core instead of @babel/core - such as <code>cypress-vue-unit-test</code>. To find out which one it is, run: <code>npm ls babel-core</code> and then remove the offending source.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cd into project folder</span></span><br><span class="line">$ rm yarn.lock                       <span class="comment"># or: package-lock.json (if installed through npm) </span></span><br><span class="line">$ rm -rf node_modules/</span><br><span class="line">$ yarn global add quasar-cli@latest  <span class="comment"># or: npm install --global quasar-cli@latest</span></span><br><span class="line">$ yarn add --dev quasar-cli@latest   <span class="comment"># or: npm install --save-dev quasar-cli@latest</span></span><br><span class="line">$ yarn                               <span class="comment"># or: npm install</span></span><br></pre></td></tr></table></figure>
 <h3 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes:"></a>Breaking Changes:</h3><ul>
 <li>QIcon: removed “mat” &amp; “ios” props for performance reasons (use <code>:name=&quot;$q.theme === &#39;mat&#39; ? val : otherVal&quot;</code> instead)</li>
 <li>Removed utils &gt; dom &gt; viewport() method (use window.innerHeight/innerWidth instead)</li>
@@ -527,7 +534,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sun May 20 2018
+      Last updated: Mon May 21 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/quasar-upgrade-guide.md" target="_blank">
