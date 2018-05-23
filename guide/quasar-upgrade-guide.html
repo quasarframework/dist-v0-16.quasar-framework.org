@@ -420,11 +420,11 @@
 <p>Upgrading from v0.15.x should be seamless if you are using Quasar CLI – which will guide you to do some minor changes to your project folder. Note that Ionicons v4 has breaking changes, so if you are using it in your project, then you need to update each such icon to its new name.</p>
 <p>If you face any problems, there is probably something conflicting in your npm modules. It is either babel, webpack or eslint. The console messages will tell you more about what is wrong.</p>
 <blockquote>
-<p><strong>Remember you’ll be using Webpack 4, so all your webpack plugins must be compatible with it</strong>. For example, you need to upgrade to a newer <code>eslint-loader</code> package if you already have it in your package.json as dev dependency.</p>
+<p><strong>Remember you’ll be using Webpack 4, so all your webpack plugins must be compatible with it</strong>. For example, you need to upgrade to a newer <code>eslint-loader</code>, <code>babel-eslint</code> etc package if you already have it in your package.json as dev dependency.</p>
 </blockquote>
-<p>If you’re using ESLint, make sure you have these in your package.json:<br><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"eslint-loader": "^2.0.0",</span><br><span class="line">"eslint": "^4.19.1",</span><br></pre></td></tr></table></figure></p>
+<p>If you’re using ESLint, make sure you have these in your package.json (minimum version required):<br><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"babel-eslint": "^8.2.2",</span><br><span class="line">"eslint": "^4.15.0",</span><br><span class="line">"eslint-config-standard": "^11.0.0",</span><br><span class="line">"eslint-friendly-formatter": "^3.0.0",</span><br><span class="line">"eslint-loader": "^2.0.0",</span><br><span class="line">"eslint-plugin-import": "^2.7.0",</span><br><span class="line">"eslint-plugin-node": "^6.0.1",</span><br><span class="line">"eslint-plugin-promise": "^3.7.0",</span><br><span class="line">"eslint-plugin-standard": "^3.0.1",</span><br><span class="line">"eslint-plugin-vue": "^4.0.0",</span><br></pre></td></tr></table></figure></p>
 <p>If you are seeing babel issues when you run <code>quasar dev</code>, then you have probably installed a package that is using babel-core instead of @babel/core - such as <code>cypress-vue-unit-test</code>. To find out which one it is, run: <code>npm ls babel-core</code> and then remove the offending source.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cd into project folder</span></span><br><span class="line">$ rm yarn.lock                       <span class="comment"># or: package-lock.json (if installed through npm) </span></span><br><span class="line">$ rm -rf node_modules/</span><br><span class="line">$ yarn global add quasar-cli@latest  <span class="comment"># or: npm install --global quasar-cli@latest</span></span><br><span class="line">$ yarn add --dev quasar-cli@latest   <span class="comment"># or: npm install --save-dev quasar-cli@latest</span></span><br><span class="line">$ yarn                               <span class="comment"># or: npm install</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cd into project folder</span></span><br><span class="line">$ rm yarn.lock                       <span class="comment"># or: package-lock.json (if installed through npm)</span></span><br><span class="line">$ rm -rf node_modules/</span><br><span class="line">$ yarn global add quasar-cli@latest  <span class="comment"># or: npm install --global quasar-cli@latest</span></span><br><span class="line">$ yarn add --dev quasar-cli@latest   <span class="comment"># or: npm install --save-dev quasar-cli@latest</span></span><br><span class="line">$ yarn                               <span class="comment"># or: npm install</span></span><br></pre></td></tr></table></figure>
 <h3 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes:"></a>Breaking Changes:</h3><ul>
 <li>QIcon: removed “mat” &amp; “ios” props for performance reasons (use <code>:name=&quot;$q.theme === &#39;mat&#39; ? val : otherVal&quot;</code> instead)</li>
 <li>Removed utils &gt; dom &gt; viewport() method (use window.innerHeight/innerWidth instead)</li>
@@ -534,7 +534,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Mon May 21 2018
+      Last updated: Wed May 23 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/quasar-upgrade-guide.md" target="_blank">
