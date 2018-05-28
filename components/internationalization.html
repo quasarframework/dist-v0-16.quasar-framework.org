@@ -706,8 +706,10 @@
   </h1>
 
   <p>Internationalization is a design process that ensures a product (a website or application) can be adapted to various languages and regions without requiring engineering changes to the source code. Think of internationalization as readiness for localization.</p>
-<p>Recommended package for handling website/app is <a href="https://github.com/kazupon/vue-i18n" target="_blank" rel="noopener">vue-i18n</a>.</p>
-<p>However, handling I18n in app-space is not enough. Quasar components have their own labels too. One option is to configure labels through label properties on each instance of Quasar components like QTable or QDatetime. This takes time and adds unnecessary complexity to your website/app. Instead, use the Quasar I18n (applies to Quasar components only!) system.</p>
+<p>The recommended package for handling website/app is <a href="https://github.com/kazupon/vue-i18n" target="_blank" rel="noopener">vue-i18n</a>. It should be noted that what is described below is the internationalization of quasar-framework components. If you need to internationalize your own components, read the documentation indicated above and configure the project by editing the files located in <code>&lt;project&gt;/src/i18n</code></p>
+<p>The following is an example recipe for using <strong>vue-i18n</strong> embedded <code>&lt;i18n&gt;</code> template components in your vue files with <strong>vue-i18n-loader</strong>, which you have to add in your <code>quasar.conf.js</code>. In this case the translations are stored in yaml format in the block.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// quasar.conf</span></span><br><span class="line">build: &#123;</span><br><span class="line">  <span class="comment">// OR use the equivalent chainWebpack()</span></span><br><span class="line">  <span class="comment">// with its own chain statements (CLI v0.16.2+)</span></span><br><span class="line">  extendWebpack (cfg) &#123;</span><br><span class="line">    cfg.module.rules.push(&#123;</span><br><span class="line">      resourceQuery: <span class="regexp">/blockType=i18n/</span>,</span><br><span class="line">      use: [</span><br><span class="line">        &#123;<span class="attr">loader</span>: <span class="string">'@kazupon/vue-i18n-loader'</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">loader</span>: <span class="string">'yaml-loader'</span>&#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;)</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>However, handling i18n in app-space is not enough. Quasar components have their own labels too. One option is to configure labels through label properties on each instance of Quasar components like QTable or QDatetime. This takes time and adds unnecessary complexity to your website/app. Instead, use the Quasar I18n (applies to Quasar components only!) system.</p>
 <blockquote>
 <p>For a complete list of available languages, check <a href="https://github.com/quasarframework/quasar/tree/dev/i18n" target="_blank" rel="noopener">Quasar I18n on Github</a>.<br><strong>If your desired language is not on that list</strong>, then feel free to submit a PR to add it. It takes from 5 to 10 minutes at most. We kindly welcome any language!</p>
 </blockquote>
@@ -735,7 +737,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Mon May 28 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/internationalization.md" target="_blank">

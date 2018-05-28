@@ -423,7 +423,7 @@
 <h2 id="2-Add-Cordova-Quasar-Mode"><a href="#2-Add-Cordova-Quasar-Mode" class="headerlink" title="2. Add Cordova Quasar Mode"></a>2. Add Cordova Quasar Mode</h2><p>In order to develop/build a Mobile app, we need to add the Cordova mode to our Quasar project. What this does is that it uses Cordova CLI to generate a Cordova project in <code>/src-cordova</code> folder. <code>/src-cordova/www</code> folder will be overwritten each time you build.<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar mode -a cordova</span><br></pre></td></tr></table></figure></p>
 <p>You can now verify if everything is in order. “cd” into <code>/src-cordova</code> and type:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ cordova requirements</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>On some newer Debian-based operating systems you might face a very persistent problem when running <code>cordova requirements</code>. Please see the <a href="/guide/cordova-troubleshoot-and-tips.html#Android-SDK-not-found-after-installation-of-the-SDK">“Android SDK not found” after installation</a> section for assistance.</p>
+<p>On some newer Debian-based operating systems you might face a very persistent problem when running <code>cordova requirements</code>. Please see the <a href="/guide/cordova-troubleshooting-and-tips.html#Android-SDK-not-found-after-installation-of-the-SDK">“Android SDK not found” after installation</a> section for assistance.</p>
 </blockquote>
 <h2 id="3-Start-Developing"><a href="#3-Start-Developing" class="headerlink" title="3. Start Developing"></a>3. Start Developing</h2><p>If you want to jump right in and start developing, you can skip the previous step with “quasar mode” command and issue:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ quasar dev -m cordova -T [android|ios]</span><br></pre></td></tr></table></figure></p>
 <p>This will add Cordova mode automatically, if it is missing.</p>
@@ -443,7 +443,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sun May 20 2018
+      Last updated: Mon May 28 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/guide/cordova-preparation.md" target="_blank">
