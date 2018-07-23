@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -801,7 +799,7 @@
 <blockquote>
 <p>The helper function will also take care of setting dependent custom properties for some colors (<code>positive</code>, <code>negative</code>, <code>light</code>), so this is the recommended way of usage instead of the raw Javascript <code>setProperty()</code>.</p>
 </blockquote>
-<h3 id="Helper-getBrand"><a href="#Helper-getBrand" class="headerlink" title="Helper - getBrand"></a>Helper - getBrand</h3><p>Quasar offers a helper function for setting custom colors in the <code>colors</code> utils: <code>getBrand(colorName[, element])</code></p>
+<h3 id="Helper-getBrand"><a href="#Helper-getBrand" class="headerlink" title="Helper - getBrand"></a>Helper - getBrand</h3><p>Quasar offers a helper function for getting custom colors in the <code>colors</code> utils: <code>getBrand(colorName[, element])</code></p>
 <table>
 <thead>
 <tr>
@@ -830,6 +828,9 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; colors &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line"></span><br><span class="line">colors.getBrand(<span class="string">'primary'</span>) <span class="comment">// '#33F'</span></span><br><span class="line">colors.getBrand(<span class="string">'primary'</span>, <span class="built_in">document</span>.getElementById(<span class="string">'rebranded-section-id'</span>))</span><br></pre></td></tr></table></figure>
 <p>What this helper does is wrap the raw Javascript <code>getPropertyValue()</code> and it’s available for convenience. Example of equivalent raw Javascript:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// equivalent of colors.getBrand('primary') in raw Javascript:</span></span><br><span class="line"></span><br><span class="line">getComputedStyle(<span class="built_in">document</span>.documentElement)</span><br><span class="line">  .getPropertyValue(<span class="string">'--q-color-primary'</span>) <span class="comment">// #0273d4</span></span><br></pre></td></tr></table></figure>
+<h3 id="Create-Dynamic-Custom-Colors"><a href="#Create-Dynamic-Custom-Colors" class="headerlink" title="Create Dynamic Custom Colors"></a>Create Dynamic Custom Colors</h3><p>You can use <code>setBrand</code> and <code>getBrand</code> to define custom brand colors to use in your application.<br>An example of such a new custom color usage:</p>
+<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line"><span class="variable">$primary</span>-darkened = darken(<span class="variable">$primary</span>, <span class="number">10%</span>)</span><br><span class="line"></span><br><span class="line">:root</span><br><span class="line">  --q-<span class="attribute">color</span>-primary-darkened <span class="variable">$primary</span>-darkened</span><br><span class="line"></span><br><span class="line">.text-primary-darkened</span><br><span class="line">  <span class="attribute">color</span> <span class="variable">$primary</span>-darkened !important</span><br><span class="line">  <span class="attribute">color</span> var(--q-color-primary-darkened) !important</span><br><span class="line">.bg-primary-darkened</span><br><span class="line">  <span class="attribute">background</span> <span class="variable">$primary</span>-darkened !important</span><br><span class="line">  <span class="attribute">background</span> var(--q-color-primary-darkened) !important</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; colors &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> &#123; lighten, setBrand &#125; = colors</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> newPrimaryColor = <span class="string">'#933'</span></span><br><span class="line">setBrand(<span class="string">'primary'</span>, newPrimaryColor)</span><br><span class="line">setBrand(<span class="string">'primary-darkened'</span>, lighten(newPrimaryColor, <span class="number">-10</span>))</span><br></pre></td></tr></table></figure>
 
 
   
@@ -846,7 +847,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Tue Jul 10 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/color-utils.md" target="_blank">

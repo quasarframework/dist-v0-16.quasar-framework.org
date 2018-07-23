@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -709,6 +707,7 @@
 <input type="hidden" data-fullpage-demo="forms/input">
 
 <p>Works well with <a href="/components/field.html">QField</a> for additional functionality such as a helper, error message placeholder and many others.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Edit <code>/quasar.conf.js</code>:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">framework: &#123;</span><br><span class="line">  components: [<span class="string">'QInput'</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="Basic-Usage"><a href="#Basic-Usage" class="headerlink" title="Basic Usage"></a>Basic Usage</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Single Line Input --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-input</span> <span class="attr">v-model</span>=<span class="string">"text"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-input</span> <span class="attr">v-model</span>=<span class="string">"text"</span> <span class="attr">stack-label</span>=<span class="string">"Stack Label"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-input</span> <span class="attr">v-model</span>=<span class="string">"text"</span> <span class="attr">float-label</span>=<span class="string">"Float Label"</span> <span class="attr">placeholder</span>=<span class="string">"Gigi"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Multiple Line Input --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-model</span>=<span class="string">"area"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">type</span>=<span class="string">"textarea"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">float-label</span>=<span class="string">"Textarea"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:max-height</span>=<span class="string">"100"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rows</span>=<span class="string">"7"</span></span></span><br><span class="line"><span class="tag">/&gt;</span><span class="comment">&lt;!-- max-height refers to pixels --&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="Vue-Properties"><a href="#Vue-Properties" class="headerlink" title="Vue Properties"></a>Vue Properties</h2><p>Supports <code>v-model</code> which should be bound to a String or Number (depending on <code>type</code> property used) in your scope.</p>
 <table>
@@ -744,6 +743,11 @@
 <td><code>upper-case</code></td>
 <td>Boolean</td>
 <td>Transform input to upper case.</td>
+</tr>
+<tr>
+<td><code>lower-case</code></td>
+<td>Boolean</td>
+<td>Transform input to lower case.</td>
 </tr>
 </tbody>
 </table>
@@ -1071,7 +1075,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Mon Jul 23 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/input-textfield.md" target="_blank">

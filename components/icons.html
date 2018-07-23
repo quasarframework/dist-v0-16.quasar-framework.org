@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -744,9 +742,17 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">plugins: [</span><br><span class="line">  ...</span><br><span class="line">  <span class="string">'fontawesome-pro'</span> <span class="comment">// Add app plugin</span></span><br><span class="line">],</span><br><span class="line">extras: [</span><br><span class="line">  <span class="comment">// 'fontawesome' // Disable free version!</span></span><br><span class="line">],</span><br><span class="line">framework: &#123;</span><br><span class="line">  <span class="comment">// if you want Quasar to use Fontawesome for its icons</span></span><br><span class="line">  iconSet: <span class="string">'fontawesome-pro'</span> <span class="comment">// requires Quasar v0.15.6+</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Edit <code>/src/plugins/fontawesome-pro.js</code>:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fontawesome.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fa-solid.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fa-regular.css'</span></span><br><span class="line"><span class="comment">// do you want these too?</span></span><br><span class="line"><span class="comment">// import '@fortawesome/fontawesome-pro-webfonts/css/fa-light.css'</span></span><br><span class="line"><span class="comment">// import '@fortawesome/fontawesome-pro-webfonts/css/fa-brands.css'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; &#123;</span><br><span class="line">  <span class="comment">// Leave blank or make something cool.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// required</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fontawesome.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fa-light.css'</span></span><br><span class="line"><span class="comment">// do you want these too?</span></span><br><span class="line"><span class="comment">// import '@fortawesome/fontawesome-pro-webfonts/css/fa-brands.css'</span></span><br><span class="line"><span class="comment">// import '@fortawesome/fontawesome-pro-webfonts/css/fa-solid.css'</span></span><br><span class="line"><span class="comment">// import '@fortawesome/fontawesome-pro-webfonts/css/fa-regular.css'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; &#123;</span><br><span class="line">  <span class="comment">// Leave blank or make something cool.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>(Optional) Override default icons:</p>
 </li>
 </ol>
+<p>Since the default <code>font-weight</code> for fontawesome-pro is <code>light</code> or <code>fal</code>, some icons used by the framework components may not be desirable. The best way to handle this is to override it in the plugin you created.</p>
+<p>For instance, to override the <code>fal</code> version of the close icon for chips, do this:</p>
+<p><em>First</em>, find the icon used for chip close in Quasar’s <code>quasar/icons/fontawesome-pro.js</code></p>
+<p>(Alternatively, you can check inside the render function of the component you are overriding.)</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">chip: &#123;</span><br><span class="line">  close: <span class="string">'fal fa-times-circle'</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p><em>Then</em>, override it in your <code>/src/plugins/fontawesome-pro.js</code><br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fontawesome.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fa-solid.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'@fortawesome/fontawesome-pro-webfonts/css/fa-light.css'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> (&#123; Vue &#125;) =&gt; &#123;</span><br><span class="line">  Vue.prototype.$q.icon.chip.close = <span class="string">'fas fa-times-circle'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="Basic-Usage"><a href="#Basic-Usage" class="headerlink" title="Basic Usage"></a>Basic Usage</h2><p>Let’s take a look at how we can use QIcon component. Do not forget to check above how to <a href="#Installing">Install Icon Sets</a>, otherwise they won’t show up!</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Material icons have no prefix --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-icon</span> <span class="attr">name</span>=<span class="string">"thumb_up"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Ionicons have "ion-", "ion-logo", "ion-md-" or "ion-ios-" as prefix --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-icon</span> <span class="attr">name</span>=<span class="string">"ion-heart"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Fontawesome icons have "fa[s|r|l|b] fa-" prefix --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-icon</span> <span class="attr">name</span>=<span class="string">"fas fa-id-card"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- MDI icons have "mdi-" prefix --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-icon</span> <span class="attr">name</span>=<span class="string">"mdi-account-card-details"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- IcoMoon icons have "icon-" prefix --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-icon</span> <span class="attr">name</span>=<span class="string">"icon-chrome"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">  or if you prefer the non self-closing tag version</span></span><br><span class="line"><span class="comment">  which allows to add a QPopover or QTooltip:</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q-icon</span> <span class="attr">name</span>=<span class="string">"thumb_up"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">q-tooltip</span>&gt;</span>Some tooltip<span class="tag">&lt;/<span class="name">q-tooltip</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">q-icon</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>For “icon” properties on different Quasar components you won’t have the means to specify an icon for each platform, but you can achieve the same effect with:</p>
@@ -840,7 +846,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Mon May 21 2018
+      Last updated: Thu Jun 14 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/icons.md" target="_blank">

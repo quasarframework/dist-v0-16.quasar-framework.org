@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -762,7 +760,7 @@
 <td>Used to change the display of the Step icon, when the step is finished. Default is the “check” icon.</td>
 </tr>
 <tr>
-<td><code>selected-icon</code></td>
+<td><code>active-icon</code></td>
 <td>String, Boolean</td>
 <td>Used to change the icon, when a Step is selected. Default is the “edit” icon.</td>
 </tr>
@@ -797,6 +795,21 @@
 <tr>
 <td><code>reset()</code></td>
 <td>Returns the stepper back to the first step.</td>
+</tr>
+</tbody>
+</table>
+<p>Component events:</p>
+<table>
+<thead>
+<tr>
+<th>Vue Event</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@step</code></td>
+<td>Emitted when navigating to another step.</td>
 </tr>
 </tbody>
 </table>
@@ -913,7 +926,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Mon Jul 23 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/stepper.md" target="_blank">

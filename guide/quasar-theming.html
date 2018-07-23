@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -421,7 +419,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">src</span><br><span class="line">└── css</span><br><span class="line">    └── themes</span><br><span class="line">        ├── common.variables.styl <span class="comment"># Theme Shared Quasar Variables</span></span><br><span class="line">        ├── variables.mat.styl    <span class="comment"># Quasar Variables that apply to Material only</span></span><br><span class="line">        └── variables.ios.styl    <span class="comment"># Quasar Variables that apply to iOS only</span></span><br></pre></td></tr></table></figure>
 <p>You will find more documentation and steps in these files.</p>
 <h2 id="Using-Stylus-variables-in-Vue-files"><a href="#Using-Stylus-variables-in-Vue-files" class="headerlink" title="Using Stylus variables in Vue files"></a>Using Stylus variables in Vue files</h2><p>In your app’s <code>*.vue</code> files you can use the core Quasar Stylus variables (examples - colors: <code>$primary</code>, <code>$red-1</code>, media breakpoints: <code>$breakpoint-md</code>, <code>$breakpoint-md-min</code> and so on).</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Notice lang="stylus" --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"stylus"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">// "variables" is a Webpack alias (provided out of the box by Quasar CLI)</span></span><br><span class="line"><span class="css">@<span class="keyword">import</span> <span class="string">'~variables'</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">div</span></span><br><span class="line"><span class="undefined">  color $red-1</span></span><br><span class="line"><span class="undefined">  background-color $grey-5</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Notice lang="stylus" --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"stylus"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">// "variables" is a Webpack alias (provided out of the box by Quasar CLI)</span></span><br><span class="line"><span class="undefined">@import '~variables'</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">div</span></span><br><span class="line"><span class="undefined">  color $red-1</span></span><br><span class="line"><span class="undefined">  background-color $grey-5</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><strong>NOTE:</strong> You must add <code>@import &#39;~variables&#39;</code> within your <code>&lt;style&gt;</code> tags, in order for Quasar to parse any Stylus variables you may add. If you don’t, Quasar will literally pass the variables as text and any theming changes using Stylus variables won’t work.</p>
 <p><strong>NOTE:</strong> The <code>&lt;style&gt;</code> tag uses Stylus code. You can’t use any other CSS pre-processor.</p>
 <h2 id="Theming-Your-App"><a href="#Theming-Your-App" class="headerlink" title="Theming Your App"></a>Theming Your App</h2><p>You can easily theme your App by adding Stylus variable declarations in <code>src/css/themes/common.variables.styl</code> or the other two files (in the latter case if you want different looks for each Quasar theme).</p>

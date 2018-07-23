@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -899,7 +897,7 @@
 <h3 id="The-Options-Array-Format"><a href="#The-Options-Array-Format" class="headerlink" title="The Options Array Format"></a>The Options Array Format</h3><p>Below are examples of the array of options you must use to create the selection options:</p>
 <p>Select options object:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">selectOptions: [</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Google'</span>,</span><br><span class="line">    value: <span class="string">'goog'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Facebook'</span>,</span><br><span class="line">    value: <span class="string">'fb'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
 <p>More advanced select list object example:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">selectListOptions: [</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Google'</span>,</span><br><span class="line">    icon: <span class="string">'search'</span>,</span><br><span class="line">    value: <span class="string">'goog'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Facebook'</span>,</span><br><span class="line">    inset: <span class="literal">true</span>,</span><br><span class="line">    description: <span class="string">'Enables communication'</span>,</span><br><span class="line">    value: <span class="string">'fb'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Oracle'</span>,</span><br><span class="line">    description: <span class="string">'Some Java for today?'</span>,</span><br><span class="line"></span><br><span class="line">    icon: <span class="string">'mail'</span>,</span><br><span class="line">    leftColor: <span class="string">'secondary'</span>, <span class="comment">// color for left side, whatever it is (icon, letter, ...)</span></span><br><span class="line"></span><br><span class="line">    rightIcon: <span class="string">'alarm'</span>,</span><br><span class="line">    rightColor: <span class="string">'negative'</span>, <span class="comment">// color for right side, whatever it is (icon, letter, ...)</span></span><br><span class="line"></span><br><span class="line">    value: <span class="string">'ora'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Apple Inc.'</span>,</span><br><span class="line">    inset: <span class="literal">true</span>,</span><br><span class="line">    stamp: <span class="string">'10 min'</span>,</span><br><span class="line">    value: <span class="string">'appl'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">selectListOptions: [</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Google'</span>,</span><br><span class="line">    icon: <span class="string">'search'</span>,</span><br><span class="line">    value: <span class="string">'goog'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Facebook'</span>,</span><br><span class="line">    inset: <span class="literal">true</span>,</span><br><span class="line">    sublabel: <span class="string">'Enables communication'</span>,</span><br><span class="line">    value: <span class="string">'fb'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Oracle'</span>,</span><br><span class="line">    sublabel: <span class="string">'Some Java for today?'</span>,</span><br><span class="line"></span><br><span class="line">    icon: <span class="string">'mail'</span>,</span><br><span class="line">    leftColor: <span class="string">'secondary'</span>, <span class="comment">// color for left side, whatever it is (icon, letter, ...)</span></span><br><span class="line"></span><br><span class="line">    rightIcon: <span class="string">'alarm'</span>,</span><br><span class="line">    rightColor: <span class="string">'negative'</span>, <span class="comment">// color for right side, whatever it is (icon, letter, ...)</span></span><br><span class="line"></span><br><span class="line">    value: <span class="string">'ora'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'Apple Inc.'</span>,</span><br><span class="line">    inset: <span class="literal">true</span>,</span><br><span class="line">    stamp: <span class="string">'10 min'</span>,</span><br><span class="line">    value: <span class="string">'appl'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>Note</strong><br>Set “inset” to <code>true</code>, instead of an icon, so the label text is properly aligned with the other options that use icons or avatars.</p>
 </blockquote>
@@ -1095,7 +1093,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Mon Jul 23 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/select.md" target="_blank">

@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -786,7 +784,7 @@
 </table>
 <h2 id="Manipulate-dates"><a href="#Manipulate-dates" class="headerlink" title="Manipulate dates"></a>Manipulate dates</h2><h3 id="Create"><a href="#Create" class="headerlink" title="Create"></a>Create</h3><p><strong>Try to create dates with native JS Date class</strong> like so:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br></pre></td></tr></table></figure></p>
 <p>The following method is just a wrapper to help you in cases where you just need current time but with a different year, or month, or second etc.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; date &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> newDate = date.buildDate(&#123; <span class="attr">year</span>:<span class="number">2010</span>, <span class="attr">date</span>:<span class="number">5</span>, <span class="attr">hours</span>:<span class="number">15</span>, <span class="attr">milliseconds</span>:<span class="number">123</span>&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; date &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> newDate = date.buildDate(&#123; <span class="attr">year</span>:<span class="number">2010</span>, <span class="attr">day</span>:<span class="number">5</span>, <span class="attr">hours</span>:<span class="number">15</span>, <span class="attr">milliseconds</span>:<span class="number">123</span>&#125;)</span><br></pre></td></tr></table></figure>
 <p>You can pass a third argument (a boolean) for setting UTC time (true) instead of local time.</p>
 <p>The object literal provided can contain the following keys (all are optional):</p>
 <table>
@@ -814,7 +812,7 @@
 <td>for the hours component of the date/time</td>
 </tr>
 <tr>
-<td><code>date</code></td>
+<td><code>day</code></td>
 <td>for the day component of the date/time</td>
 </tr>
 <tr>
@@ -896,7 +894,7 @@
 <td>for the hours component of the date/time</td>
 </tr>
 <tr>
-<td><code>date</code></td>
+<td><code>day</code></td>
 <td>for the day component of the date/time</td>
 </tr>
 <tr>
@@ -1042,7 +1040,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Tue Jul 10 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/date-utils.md" target="_blank">

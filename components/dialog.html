@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -715,7 +713,7 @@
 <h2 id="Basic-Usage-as-a-Method"><a href="#Basic-Usage-as-a-Method" class="headerlink" title="Basic Usage as a Method"></a>Basic Usage as a Method</h2><p>First, we install it:</p>
 <p>Edit <code>/quasar.conf.js</code>:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">framework: &#123;</span><br><span class="line">  plugins: [<span class="string">'Dialog'</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>Now let’s see how we can use it:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// outside of a Vue file</span></span><br><span class="line"><span class="keyword">import</span> &#123; Dialog &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line">(<span class="built_in">Promise</span>) Dialog.create(configObj)</span><br><span class="line"></span><br><span class="line"><span class="comment">// inside of a Vue file</span></span><br><span class="line">(<span class="built_in">Promise</span>) <span class="keyword">this</span>.$q.dialog(configObj)</span><br></pre></td></tr></table></figure></p>
-<p>Basic syntax for the config object:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">this</span>.$q.dialog(&#123;</span><br><span class="line">  title: <span class="string">'Warning'</span>,</span><br><span class="line">  message: <span class="string">'You are about to run out of disk space.'</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional</span></span><br><span class="line">  color: <span class="string">'primary'</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; we want an "OK" button</span></span><br><span class="line">  ok: <span class="literal">true</span>, <span class="comment">// takes i18n value, or String for "OK" button label</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; we want a "Cancel" button</span></span><br><span class="line">  cancel: <span class="literal">true</span>, <span class="comment">// takes i18n value, or String for "Cancel" button label</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; prevent user dismissal when not clicking on a Dialog button</span></span><br><span class="line">  preventClose: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  noBackdropDismiss: <span class="literal">false</span>, <span class="comment">// gets set to "true" automatically if preventClose is "true"</span></span><br><span class="line">  noEscDismiss: <span class="literal">false</span>, <span class="comment">// gets set to "true" automatically if preventClose is "true"</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; do not refocus (on dialog close) the element that had focus before opening (default is to refocus)</span></span><br><span class="line">  noRefocus: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; stacks button vertically instead of horizontally (default)</span></span><br><span class="line">  stackButtons: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; a position of the Dialog (top, bottom, left, right)</span></span><br><span class="line">  position: <span class="string">'top'</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; show an input box (make Dialog similar to a JS prompt)</span></span><br><span class="line">  prompt: &#123;</span><br><span class="line">    model: <span class="string">''</span>,</span><br><span class="line">    type: <span class="string">'text'</span> <span class="comment">// optional</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; show a radio, checkbox or toggle</span></span><br><span class="line">  options: &#123;</span><br><span class="line">    type: <span class="string">'radio'</span>, <span class="comment">// or 'checkbox' / 'toggle'</span></span><br><span class="line">    model: <span class="string">'opt2'</span>, <span class="comment">// Array when checkbox/toggle! (like '[]')</span></span><br><span class="line">    items: [</span><br><span class="line">      &#123;<span class="attr">label</span>: <span class="string">'Option 1'</span>, <span class="attr">value</span>: <span class="string">'opt1'</span>, <span class="attr">color</span>: <span class="string">'secondary'</span>&#125;,</span><br><span class="line">      &#123;<span class="attr">label</span>: <span class="string">'Option 2'</span>, <span class="attr">value</span>: <span class="string">'opt2'</span>&#125;,</span><br><span class="line">      &#123;<span class="attr">label</span>: <span class="string">'Option 3'</span>, <span class="attr">value</span>: <span class="string">'opt3'</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  noRefocus: <span class="literal">true</span> <span class="comment">// (v0.15.11+) Do not refocus previously focused DOM element after closing the Dialog |</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>Basic syntax for the config object:<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">this</span>.$q.dialog(&#123;</span><br><span class="line">  title: <span class="string">'Warning'</span>,</span><br><span class="line">  message: <span class="string">'You are about to run out of disk space.'</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional</span></span><br><span class="line">  color: <span class="string">'primary'</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; we want an "OK" button</span></span><br><span class="line">  ok: <span class="literal">true</span>, <span class="comment">// takes i18n value, or String for "OK" button label</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; we want a "Cancel" button</span></span><br><span class="line">  cancel: <span class="literal">true</span>, <span class="comment">// takes i18n value, or String for "Cancel" button label</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; prevent user dismissal when not clicking on a Dialog button</span></span><br><span class="line">  preventClose: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  noBackdropDismiss: <span class="literal">false</span>, <span class="comment">// gets set to "true" automatically if preventClose is "true"</span></span><br><span class="line">  noEscDismiss: <span class="literal">false</span>, <span class="comment">// gets set to "true" automatically if preventClose is "true"</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; stacks button vertically instead of horizontally (default)</span></span><br><span class="line">  stackButtons: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; a position of the Dialog (top, bottom, left, right)</span></span><br><span class="line">  position: <span class="string">'top'</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; show an input box (make Dialog similar to a JS prompt)</span></span><br><span class="line">  prompt: &#123;</span><br><span class="line">    model: <span class="string">''</span>,</span><br><span class="line">    type: <span class="string">'text'</span> <span class="comment">// optional</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// optional; show a radio, checkbox or toggle</span></span><br><span class="line">  options: &#123;</span><br><span class="line">    type: <span class="string">'radio'</span>, <span class="comment">// or 'checkbox' / 'toggle'</span></span><br><span class="line">    model: <span class="string">'opt2'</span>, <span class="comment">// Array when checkbox/toggle! (like '[]')</span></span><br><span class="line">    items: [</span><br><span class="line">      &#123;<span class="attr">label</span>: <span class="string">'Option 1'</span>, <span class="attr">value</span>: <span class="string">'opt1'</span>, <span class="attr">color</span>: <span class="string">'secondary'</span>&#125;,</span><br><span class="line">      &#123;<span class="attr">label</span>: <span class="string">'Option 2'</span>, <span class="attr">value</span>: <span class="string">'opt2'</span>&#125;,</span><br><span class="line">      &#123;<span class="attr">label</span>: <span class="string">'Option 3'</span>, <span class="attr">value</span>: <span class="string">'opt3'</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p><strong>IMPORTANT</strong><br>When user hits the phone/tablet back button (only for Cordova apps), the Action Sheet will get closed automatically.<br>Also, when on a desktop browser, hitting the &lt;ESCAPE&gt; key also closes the Action Sheet.</p>
 </blockquote>
@@ -787,11 +785,6 @@
 <td>“ESC” key won’t dismiss the Dialog. Overriden to “true” if “prevent-close” is “true”.</td>
 </tr>
 <tr>
-<td><code>no-refocus</code></td>
-<td>Boolean</td>
-<td>Do not refocus (on dialog close) the element that had focus before opening (by default it tries to refocus)</td>
-</tr>
-<tr>
 <td><code>no-backdrop-dismiss</code></td>
 <td>Boolean</td>
 <td>Click/Tap on backdrop won’t dismiss Dialog. Overriden to “true” if “prevent-close” is “true”.</td>
@@ -805,11 +798,6 @@
 <td><code>color</code></td>
 <td>String</td>
 <td>A color from <a href="/components/color-palette.html">Quasar Color Palette</a>.</td>
-</tr>
-<tr>
-<td><code>no-refocus</code></td>
-<td>Boolean</td>
-<td>(v0.15.11+) Do not refocus previously focused DOM element after closing the Dialog.</td>
 </tr>
 </tbody>
 </table>
@@ -861,7 +849,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Mon Jul 23 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/dialog.md" target="_blank">

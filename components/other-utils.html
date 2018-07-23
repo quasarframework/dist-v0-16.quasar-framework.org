@@ -115,7 +115,6 @@
       </a>
     </div>
 
-    <!--
     <br><br>
     <a
       href="https://quasar-framework.org"
@@ -126,7 +125,6 @@
       Please upgrade to latest Quasar
     </a>
     <br><br>
-    -->
 
     <h3 class="q-version-select">
       <i class="fa fa-book"></i> Docs for
@@ -721,7 +719,7 @@
 <h2 id="Handling-event-on-a-DOM-event-handler"><a href="#Handling-event-on-a-DOM-event-handler" class="headerlink" title="Handling event on a DOM event handler"></a>Handling event on a DOM event handler</h2><p>It’s cross-browser.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; event &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line"></span><br><span class="line">node.addEventListener(<span class="string">'click'</span>, evt =&gt; &#123;</span><br><span class="line">  <span class="comment">// left clicked?</span></span><br><span class="line">  (<span class="built_in">Boolean</span>) event.leftClick(evt)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// middle clicked?</span></span><br><span class="line">  (<span class="built_in">Boolean</span>) event.middleClick(evt)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// right clicked?</span></span><br><span class="line">  (<span class="built_in">Boolean</span>) event.rightClick(evt)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// key in number format</span></span><br><span class="line">  (<span class="built_in">Number</span>) event.getEventKey(evt)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Mouse wheel distance (in pixels)</span></span><br><span class="line">  (<span class="built_in">Number</span>) event.getMouseWheelDistance(evt)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// position on viewport</span></span><br><span class="line">  <span class="comment">// works both for mouse and touch events!</span></span><br><span class="line">  (<span class="built_in">Object</span> &#123;top, left&#125;) event.position(evt)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// get target DOM Element on which mouse or touch</span></span><br><span class="line">  <span class="comment">// event has fired upon</span></span><br><span class="line">  (DOM Element) event.targetElement(evt)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// call stopPropagation and preventDefault</span></span><br><span class="line">  event.stopAndPrevent(evt)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <h2 id="Filter"><a href="#Filter" class="headerlink" title="Filter"></a>Filter</h2><p>Filter out an array of Objects based on a certain field:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; filter &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> data = [&#123;<span class="attr">fee</span>: <span class="number">5</span>, <span class="attr">desc</span>: <span class="string">'Bla bla'</span>&#125;, &#123;<span class="attr">fee</span>: <span class="number">10</span>, <span class="attr">desc</span>: <span class="string">'Bla bla'</span>&#125;, &#123;<span class="attr">fee</span>: <span class="number">1</span>, <span class="attr">desc</span>: <span class="string">'Bla bla'</span>&#125;]</span><br><span class="line"><span class="built_in">console</span>.log(filter(<span class="string">'5'</span>, &#123;<span class="attr">field</span>: <span class="string">'fee'</span>, <span class="attr">list</span>: data&#125;)</span><br><span class="line"><span class="comment">// [&#123;fee: 5, desc: 'Bla bla'&#125;]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; filter &#125; <span class="keyword">from</span> <span class="string">'quasar'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> data = [&#123;<span class="attr">fee</span>: <span class="number">5</span>, <span class="attr">desc</span>: <span class="string">'Bla bla'</span>&#125;, &#123;<span class="attr">fee</span>: <span class="number">10</span>, <span class="attr">desc</span>: <span class="string">'Bla bla'</span>&#125;, &#123;<span class="attr">fee</span>: <span class="number">1</span>, <span class="attr">desc</span>: <span class="string">'Bla bla'</span>&#125;]</span><br><span class="line"><span class="built_in">console</span>.log(filter(<span class="string">'5'</span>, &#123;<span class="attr">field</span>: <span class="string">'fee'</span>, <span class="attr">list</span>: data&#125;))</span><br><span class="line"><span class="comment">// [&#123;fee: 5, desc: 'Bla bla'&#125;]</span></span><br></pre></td></tr></table></figure>
 
 
   
@@ -738,7 +736,7 @@
   <div class="footer">
     <hr>
     <div>
-      Last updated: Sat May 19 2018
+      Last updated: Thu Jun 07 2018
     </div>
     Caught a mistake or want to contribute to the documentation?
     <a href="https://github.com/quasarframework/quasar-site/edit/dev/source/components/other-utils.md" target="_blank">
